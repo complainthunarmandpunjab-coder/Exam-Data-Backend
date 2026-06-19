@@ -9,10 +9,26 @@ class CandidateService {
     const trimmedCnic = cnic.trim();
     const trimmedRoll = rollNumber.trim();
 
-    // Check for duplicate in local database first
-    const existingLocal = await candidateRepository.findOne({ cnic: trimmedCnic });
+    // Enforce one-time registration by checking local database for duplicate CNIC, Email, or Roll Number
+    const existingLocal = await candidateRepository.findOne({
+      $or: [
+        { cnic: trimmedCnic },
+        { email: email.toLowerCase().trim() },
+        { rollNumber: trimmedRoll }
+      ]
+    });
+    
     if (existingLocal) {
-      throw new ApiError(400, 'CNIC already registered');
+      if (existingLocal.cnic === trimmedCnic) {
+        throw new ApiError(400, 'Registration failed: This CNIC is already registered.');
+      }
+      if (existingLocal.email === email.toLowerCase().trim()) {
+        throw new ApiError(400, 'Registration failed: This Email is already registered.');
+      }
+      if (existingLocal.rollNumber === trimmedRoll) {
+        throw new ApiError(400, 'Registration failed: This Roll Number is already registered.');
+      }
+      throw new ApiError(400, 'Registration failed: You have already registered.');
     }
 
     // Retrieve Student from Master Database matching cnic, email, OR rollNumber
@@ -44,6 +60,20 @@ class CandidateService {
         String(masterUser[field.key]).toLowerCase().trim() !== String(field.value).toLowerCase().trim()
       ).map(m => m.label).join(', ');
       throw new ApiError(400, `Registration failed: Data Mismatch (${mismatches}) with Master Portal.`);
+    }
+
+    // Verify the selected course exists in the student's Master database courses array
+    const selectedCourse = candidateData.course.toLowerCase().trim();
+    const hasCourse = masterUser.courses && masterUser.courses.some(c => {
+      const dbCourse = String(c).toLowerCase().trim();
+      // Match if equal, or if either string contains the other (e.g., handles "PYTHON PROGRAMIING" vs "Python Programming for Everyone")
+      return dbCourse.includes(selectedCourse) || selectedCourse.includes(dbCourse) ||
+             dbCourse.replace(/[^a-z0-9]/g, '').includes(selectedCourse.replace(/[^a-z0-9]/g, '')) ||
+             selectedCourse.replace(/[^a-z0-9]/g, '').includes(dbCourse.replace(/[^a-z0-9]/g, ''));
+    });
+
+    if (!hasCourse) {
+      throw new ApiError(400, `Registration failed: Selected course "${candidateData.course}" does not match your enrolled courses in Master Portal.`);
     }
 
     // Enforce Enrollment Dates: 07 July 2025 to 31 March 2026

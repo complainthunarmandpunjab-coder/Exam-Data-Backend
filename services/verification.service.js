@@ -28,8 +28,19 @@ class VerificationService {
         String(masterUser[field.key]).toLowerCase().trim() !== String(field.value).toLowerCase().trim()
       );
 
+      // Verify the selected course exists in the student's Master database courses array
+      const selectedCourse = course.toLowerCase().trim();
+      const hasCourse = masterUser.courses && masterUser.courses.some(c => {
+        const dbCourse = String(c).toLowerCase().trim();
+        return dbCourse.includes(selectedCourse) || selectedCourse.includes(dbCourse) ||
+               dbCourse.replace(/[^a-z0-9]/g, '').includes(selectedCourse.replace(/[^a-z0-9]/g, '')) ||
+               selectedCourse.replace(/[^a-z0-9]/g, '').includes(dbCourse.replace(/[^a-z0-9]/g, ''));
+      });
+
       if (mismatches.length > 0) {
         reason = `Data Mismatch (${mismatches.map(m => m.label).join(', ')})`;
+      } else if (!hasCourse) {
+        reason = `Selected course "${course}" does not match your enrolled courses in Master Portal.`;
       } else {
         // Enforce Enrollment Dates: 07 July 2025 to 31 March 2026
         const enrollmentDate = masterUser.createdAt ? new Date(masterUser.createdAt) : null;
