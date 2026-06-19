@@ -1,0 +1,63 @@
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-18 23:33:16"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-18 23:33:18"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-18 23:33:18"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-18 23:33:18"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false - GET - ::1","timestamp":"2026-06-18 23:36:10"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 401 - 12ms - IP: ::1","timestamp":"2026-06-18 23:36:10"}
+{"level":"warn","message":"401 - Token is not valid - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-18 23:36:10"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 6ms - IP: ::1","timestamp":"2026-06-18 23:36:10"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates/export/jobs - GET - ::1","timestamp":"2026-06-18 23:36:10"}
+{"level":"info","message":"GET /api/candidates/export/jobs 401 - 10ms - IP: ::1","timestamp":"2026-06-18 23:36:10"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false - GET - ::1","timestamp":"2026-06-18 23:36:11"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 401 - 3ms - IP: ::1","timestamp":"2026-06-18 23:36:11"}
+{"level":"warn","message":"401 - Token is not valid - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-18 23:36:11"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 13ms - IP: ::1","timestamp":"2026-06-18 23:36:11"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates/export/jobs - GET - ::1","timestamp":"2026-06-18 23:36:11"}
+{"level":"info","message":"GET /api/candidates/export/jobs 401 - 3ms - IP: ::1","timestamp":"2026-06-18 23:36:11"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false - GET - ::1","timestamp":"2026-06-18 23:36:23"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 401 - 14ms - IP: ::1","timestamp":"2026-06-18 23:36:23"}
+{"level":"warn","message":"401 - Token is not valid - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-18 23:36:23"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 9ms - IP: ::1","timestamp":"2026-06-18 23:36:23"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates/export/jobs - GET - ::1","timestamp":"2026-06-18 23:36:23"}
+{"level":"info","message":"GET /api/candidates/export/jobs 401 - 13ms - IP: ::1","timestamp":"2026-06-18 23:36:23"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false - GET - ::1","timestamp":"2026-06-18 23:36:24"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 401 - 4ms - IP: ::1","timestamp":"2026-06-18 23:36:24"}
+{"level":"warn","message":"401 - Token is not valid - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-18 23:36:24"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 4ms - IP: ::1","timestamp":"2026-06-18 23:36:24"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates/export/jobs - GET - ::1","timestamp":"2026-06-18 23:36:24"}
+{"level":"info","message":"GET /api/candidates/export/jobs 401 - 13ms - IP: ::1","timestamp":"2026-06-18 23:36:24"}
+{"level":"info","message":"GET /health 200 - 2ms - IP: ::1","timestamp":"2026-06-18 23:38:40"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false - GET - ::1","timestamp":"2026-06-18 23:38:53"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 401 - 28ms - IP: ::1","timestamp":"2026-06-18 23:38:53"}
+{"level":"warn","message":"401 - Token is not valid - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-18 23:38:53"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 4ms - IP: ::1","timestamp":"2026-06-18 23:38:53"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates/export/jobs - GET - ::1","timestamp":"2026-06-18 23:38:53"}
+{"level":"info","message":"GET /api/candidates/export/jobs 401 - 3ms - IP: ::1","timestamp":"2026-06-18 23:38:53"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false - GET - ::1","timestamp":"2026-06-18 23:38:54"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 401 - 94ms - IP: ::1","timestamp":"2026-06-18 23:38:54"}
+{"level":"warn","message":"401 - Token is not valid - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-18 23:38:54"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 99ms - IP: ::1","timestamp":"2026-06-18 23:38:54"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates/export/jobs - GET - ::1","timestamp":"2026-06-18 23:38:54"}
+{"level":"info","message":"GET /api/candidates/export/jobs 401 - 13ms - IP: ::1","timestamp":"2026-06-18 23:38:54"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false - GET - ::1","timestamp":"2026-06-18 23:39:41"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 401 - 5ms - IP: ::1","timestamp":"2026-06-18 23:39:41"}
+{"level":"warn","message":"401 - Token is not valid - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-18 23:39:41"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 6ms - IP: ::1","timestamp":"2026-06-18 23:39:41"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates/export/jobs - GET - ::1","timestamp":"2026-06-18 23:39:41"}
+{"level":"info","message":"GET /api/candidates/export/jobs 401 - 2ms - IP: ::1","timestamp":"2026-06-18 23:39:41"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false - GET - ::1","timestamp":"2026-06-18 23:39:52"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 401 - 4ms - IP: ::1","timestamp":"2026-06-18 23:39:52"}
+{"level":"warn","message":"401 - Token is not valid - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-18 23:39:52"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 15ms - IP: ::1","timestamp":"2026-06-18 23:39:52"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates/export/jobs - GET - ::1","timestamp":"2026-06-18 23:39:52"}
+{"level":"info","message":"GET /api/candidates/export/jobs 401 - 6ms - IP: ::1","timestamp":"2026-06-18 23:39:52"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false - GET - ::1","timestamp":"2026-06-18 23:40:22"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 401 - 8ms - IP: ::1","timestamp":"2026-06-18 23:40:22"}
+{"level":"warn","message":"401 - Token is not valid - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-18 23:40:22"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 81ms - IP: ::1","timestamp":"2026-06-18 23:40:22"}
+{"level":"warn","message":"401 - Token is not valid - /api/candidates/export/jobs - GET - ::1","timestamp":"2026-06-18 23:40:22"}
+{"level":"info","message":"GET /api/candidates/export/jobs 401 - 142ms - IP: ::1","timestamp":"2026-06-18 23:40:22"}
+{"level":"info","message":"POST /api/login 200 - 16ms - IP: ::1","timestamp":"2026-06-18 23:40:28"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 304 - 284ms - IP: ::1","timestamp":"2026-06-18 23:40:29"}
+{"level":"info","message":"GET /api/candidates/export/jobs 304 - 505ms - IP: ::1","timestamp":"2026-06-18 23:40:29"}
+{"level":"info","message":"GET /api/dashboard/stats 304 - 1241ms - IP: ::1","timestamp":"2026-06-18 23:40:30"}
