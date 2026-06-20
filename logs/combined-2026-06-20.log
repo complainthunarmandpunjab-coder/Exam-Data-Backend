@@ -54,3 +54,19 @@
 {"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-20 03:08:01"}
 {"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-20 03:08:01"}
 {"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-20 03:08:01"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-20 03:11:54"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-20 03:11:56"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-20 03:11:56"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-20 03:11:56"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-20 03:13:32"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-20 03:13:33"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-20 03:13:33"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-20 03:13:33"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-20 03:15:14"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-06-20 03:15:16"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-20 03:15:16"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-20 03:15:16"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-20 03:17:35"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-20 03:17:37"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-06-20 03:17:39"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-20 03:17:39"}
