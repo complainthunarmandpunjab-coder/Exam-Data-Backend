@@ -103,8 +103,28 @@ class CandidateService {
     const tehsil = masterUser.tehsil || '';
     const institute = masterUser.institute || masterUser.campus || '';
 
+    // Handle base64 profile image upload
+    let imagePath = '';
+    if (candidateData.profileImage && candidateData.profileImage.startsWith('data:image')) {
+      const fs = require('fs');
+      const path = require('path');
+      const uploadsDir = path.join(__dirname, '../public/uploads');
+      if (!fs.existsSync(uploadsDir)) {
+        fs.mkdirSync(uploadsDir, { recursive: true });
+      }
+      
+      const base64Data = candidateData.profileImage.replace(/^data:image\/\w+;base64,/, '');
+      const buffer = Buffer.from(base64Data, 'base64');
+      const fileName = `student_${trimmedRoll}_${Date.now()}.jpg`;
+      const filePath = path.join(uploadsDir, fileName);
+      fs.writeFileSync(filePath, buffer);
+      
+      imagePath = `/uploads/${fileName}`;
+    }
+
     const savedCandidate = await candidateRepository.create({
       ...candidateData,
+      profileImage: imagePath,
       district,
       tehsil,
       institute,
@@ -141,6 +161,9 @@ class CandidateService {
     }
     if (filters.city && filters.city !== 'All') {
       query.city = { $regex: `^${filters.city}$`, $options: 'i' };
+    }
+    if (filters.preferredExamCity && filters.preferredExamCity !== 'All') {
+      query.preferredExamCity = { $regex: `^${filters.preferredExamCity}$`, $options: 'i' };
     }
     if (filters.district && filters.district !== 'All') {
       query.district = { $regex: `^${filters.district}$`, $options: 'i' };
@@ -278,6 +301,7 @@ class CandidateService {
 
     if (filters.gender && filters.gender !== 'All') match.gender = { $regex: `^${filters.gender}$`, $options: 'i' };
     if (filters.city && filters.city !== 'All') match.city = { $regex: `^${filters.city}$`, $options: 'i' };
+    if (filters.preferredExamCity && filters.preferredExamCity !== 'All') match.preferredExamCity = { $regex: `^${filters.preferredExamCity}$`, $options: 'i' };
     if (filters.district && filters.district !== 'All') match.district = { $regex: `^${filters.district}$`, $options: 'i' };
     if (filters.tehsil && filters.tehsil !== 'All') match.tehsil = { $regex: `^${filters.tehsil}$`, $options: 'i' };
     if (filters.institute && filters.institute !== 'All') match.institute = { $regex: `^${filters.institute}$`, $options: 'i' };

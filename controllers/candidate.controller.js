@@ -14,12 +14,12 @@ class CandidateController {
   getCandidates = async (req, res, next) => {
     try {
       const { 
-        page, limit, search, gender, city, district, tehsil, institute, 
+        page, limit, search, gender, city, preferredExamCity, district, tehsil, institute, 
         batch, verification, course, status, startDate, endDate, sortBy, sortOrder, showDeleted
       } = req.query;
       
       const filters = { 
-        search, gender, city, district, tehsil, institute, 
+        search, gender, city, preferredExamCity, district, tehsil, institute, 
         batch, verification, course, status, startDate, endDate, sortBy, sortOrder, showDeleted
       };
       const paginationOptions = { page, limit };

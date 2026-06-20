@@ -84,6 +84,7 @@ class ExportService {
       
       if (filters.gender && filters.gender !== 'All') query.gender = { $regex: `^${filters.gender}$`, $options: 'i' };
       if (filters.city && filters.city !== 'All') query.city = { $regex: `^${filters.city}$`, $options: 'i' };
+      if (filters.preferredExamCity && filters.preferredExamCity !== 'All') query.preferredExamCity = { $regex: `^${filters.preferredExamCity}$`, $options: 'i' };
       if (filters.district && filters.district !== 'All') query.district = { $regex: `^${filters.district}$`, $options: 'i' };
       if (filters.tehsil && filters.tehsil !== 'All') query.tehsil = { $regex: `^${filters.tehsil}$`, $options: 'i' };
       if (filters.institute && filters.institute !== 'All') query.institute = { $regex: `^${filters.institute}$`, $options: 'i' };

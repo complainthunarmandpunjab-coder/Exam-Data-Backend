@@ -15,6 +15,7 @@ const candidateSchema = new mongoose.Schema({
     batch: { type: String, required: true, default: 'Batch 1' },
     course: { type: String, required: true },
     rollNumber: { type: String, required: true, trim: true },
+    profileImage: { type: String, default: '' },
     verificationStatus: { type: String, default: 'unverified' },
     status: { type: String, default: 'Pending' },
     isDeleted: { type: Boolean, default: false },

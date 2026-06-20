@@ -10,7 +10,7 @@ class AuthService {
       const token = jwt.sign(
         { username, role: 'superadmin', permissions: ['export'] }, 
         environment.jwtSecret, 
-        { expiresIn: '24h' }
+        { expiresIn: '30d' }
       );
       return { token, message: 'Login successful (Env Auth)' };
     }
@@ -33,7 +33,7 @@ class AuthService {
         permissions: admin.permissions.length > 0 ? admin.permissions : ['export'] 
       }, 
       environment.jwtSecret, 
-      { expiresIn: '24h' }
+      { expiresIn: '30d' }
     );
     return { token, message: 'Login successful' };
   }

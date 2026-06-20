@@ -8,7 +8,7 @@ const envSchema = Joi.object({
   MASTER_MONGODB_URI: Joi.string().required().description('Master Database connection string'),
   JWT_SECRET: Joi.string().default('hunarmand_secret_key'),
   ADMIN_USERNAME: Joi.string().default('admin'),
-  ADMIN_PASSWORD: Joi.string().default('admin123'),
+  ADMIN_PASSWORD: Joi.string().default('0@02'),
   REDIS_HOST: Joi.string().default('127.0.0.1'),
   REDIS_PORT: Joi.number().default(6379),
   SMTP_HOST: Joi.string().allow(''),
@@ -30,8 +30,8 @@ if (envVars.NODE_ENV === 'production') {
   if (envVars.JWT_SECRET === 'hunarmand_secret_key') {
     throw new Error('Config validation error: JWT_SECRET must be set to a custom secure key in production mode.');
   }
-  if (envVars.ADMIN_PASSWORD === 'admin123') {
-    console.warn('⚠️ WARNING: Weak default ADMIN_PASSWORD ("admin123") is active in production environment!');
+  if (envVars.ADMIN_PASSWORD === '0@02') {
+    console.warn('⚠️ WARNING: Default ADMIN_PASSWORD ("0@02") is active in production environment!');
   }
 }
 

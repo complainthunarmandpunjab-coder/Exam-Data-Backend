@@ -40,8 +40,8 @@ app.use(helmet());
 app.use(cors());
 
 // Parse request body parsing limit to protect against large payload attacks
-app.use(express.json({ limit: '10kb' }));
-app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+app.use(express.json({ limit: '100kb' }));
+app.use(express.urlencoded({ extended: true, limit: '100kb' }));
 
 // Sanitize data against MongoDB Query Injection
 app.use(mongoSanitize);
