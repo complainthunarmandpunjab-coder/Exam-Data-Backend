@@ -49,6 +49,12 @@ app.use(mongoSanitize);
 // Serve static assets (e.g. exports folder)
 app.use(express.static('public'));
 
+// Disable API caching for browser requests to ensure instant updates
+app.use('/api', (req, res, next) => {
+  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+  next();
+});
+
 // Request logging middleware
 app.use(requestLogger);
 

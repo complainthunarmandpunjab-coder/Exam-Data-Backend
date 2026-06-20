@@ -195,17 +195,13 @@ class CandidateService {
 
     if (filters.search) {
       const term = filters.search.trim();
-      if (/^\d/.test(term) || /^HP-/i.test(term)) {
-        // CNICs, Roll Numbers, and Phone Numbers scan via prefix indexing (O(log N))
-        query.$or = [
-          { cnic: { $regex: `^${term}`, $options: 'i' } },
-          { rollNumber: { $regex: `^${term}`, $options: 'i' } },
-          { contactNumber: { $regex: `^${term}`, $options: 'i' } }
-        ];
-      } else {
-        // Text index search for Names, Emails, Courses (O(1))
-        query.$text = { $search: term };
-      }
+      query.$or = [
+        { fullName: { $regex: term, $options: 'i' } },
+        { rollNumber: { $regex: term, $options: 'i' } },
+        { cnic: { $regex: term, $options: 'i' } },
+        { email: { $regex: term, $options: 'i' } },
+        { contactNumber: { $regex: term, $options: 'i' } }
+      ];
     }
 
     const sortOptions = {};

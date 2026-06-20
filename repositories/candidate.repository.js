@@ -1,5 +1,6 @@
 const BaseRepository = require('./base.repository');
 const Candidate = require('../models/candidate.model');
+const paginate = require('../utils/pagination');
 
 class CandidateRepository extends BaseRepository {
   constructor() {
@@ -7,29 +8,7 @@ class CandidateRepository extends BaseRepository {
   }
 
   async paginate(query = {}, options = {}) {
-    const page = parseInt(options.page) || 1;
-    const limit = parseInt(options.limit) || 50;
-    const skip = (page - 1) * limit;
-
-    const findQuery = this.find(query, {
-      sort: options.sort || { createdAt: -1 },
-      skip,
-      limit,
-      lean: true
-    });
-
-    const [data, total] = await Promise.all([
-      findQuery,
-      this.countDocuments(query)
-    ]);
-
-    return {
-      data,
-      total,
-      page,
-      limit,
-      pages: Math.ceil(total / limit)
-    };
+    return paginate(this.model, query, options);
   }
 }
 

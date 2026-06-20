@@ -23,6 +23,7 @@ const candidateSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 // Optimized Compound & Single Indexes for 100k+ records
+candidateSchema.index({ fullName: 1 });
 candidateSchema.index({ rollNumber: 1 });
 candidateSchema.index({ email: 1 });
 candidateSchema.index({ verificationStatus: 1 });
