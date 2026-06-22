@@ -33,11 +33,15 @@ const ApiError = require('./utils/apiError');
 
 const app = express();
 
+// Express proxy trust configuration for rate limiter behind Nginx
+app.set('trust proxy', 1);
+
 // Set security HTTP headers
 app.use(helmet());
 
 // Enable CORS
-app.use(cors());
+app.use(cors({ origin: 'https://exams.hunarmandpunjab.org.pk', credentials: true }));
+
 
 // Parse request body parsing limit to protect against large payload attacks
 app.use(express.json({ limit: '100kb' }));
