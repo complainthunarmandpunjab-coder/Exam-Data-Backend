@@ -8,6 +8,11 @@ const { authorize } = require('../middleware/permission.middleware');
 
 const router = express.Router();
 
+router.get(
+  '/candidates/admit-card/:cnic',
+  candidateController.getAdmitCardPdf
+);
+
 router.post(
   '/register',
   validate(candidateValidation.registerSchema),

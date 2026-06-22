@@ -4,6 +4,23 @@ const ApiError = require('../utils/apiError');
 const redisService = require('./redis.service');
 
 class CandidateService {
+  constructor() {
+    this.backfillQR().catch(err => console.error('[Backfill Error]', err));
+  }
+
+  async backfillQR() {
+    const candidates = await candidateRepository.find({ qrSecureToken: { $exists: false } });
+    if (candidates.length > 0) {
+      const crypto = require('crypto');
+      console.log(`[Backfill] Found ${candidates.length} candidates without qrSecureToken. Backfilling now...`);
+      for (const candidate of candidates) {
+        const qrSecureToken = crypto.randomBytes(16).toString('hex');
+        await candidateRepository.updateOne({ _id: candidate._id }, { qrSecureToken });
+      }
+      console.log(`[Backfill] Backfilled ${candidates.length} candidates successfully.`);
+    }
+  }
+
   async register(candidateData) {
     const { fullName, fatherName, cnic, email, rollNumber } = candidateData;
     const trimmedCnic = cnic.trim();
@@ -17,7 +34,7 @@ class CandidateService {
         { rollNumber: trimmedRoll }
       ]
     });
-    
+
     if (existingLocal) {
       if (existingLocal.cnic === trimmedCnic) {
         throw new ApiError(400, 'Registration failed: This CNIC is already registered.');
@@ -31,34 +48,42 @@ class CandidateService {
       throw new ApiError(400, 'Registration failed: You have already registered.');
     }
 
-    // Retrieve Student from Master Database matching cnic, email, OR rollNumber
+    // Retrieve Student from Master Database matching cnic OR rollNumber
     const masterUser = await MasterUser.findOne({
       $or: [
         { cnic: trimmedCnic },
-        { email: email.toLowerCase().trim() },
         { rollNumber: trimmedRoll }
       ]
     });
 
     if (!masterUser) {
-      throw new ApiError(450, 'Registration failed: CNIC, Email, or Roll Number not found in Master Portal.');
+      throw new ApiError(450, 'Registration failed: CNIC or Roll Number not found in Master Portal.');
     }
 
     // Validate fields match strictly
     const fieldsToMatch = [
-      { key: 'fullName', label: 'Full Name', value: fullName },
-      { key: 'fatherName', label: "Father's Name", value: fatherName },
-      { key: 'email', label: 'Email', value: email }
+      { key: 'cnic', label: 'CNIC', value: trimmedCnic },
+      { key: 'rollNumber', label: 'Roll Number', value: trimmedRoll }
     ];
 
-    const isMatch = fieldsToMatch.every(field => 
-      String(masterUser[field.key]).toLowerCase().trim() === String(field.value).toLowerCase().trim()
-    );
+    const isMatch = fieldsToMatch.every(field => {
+      if (field.key === 'cnic') {
+        const dbCnicClean = String(masterUser.cnic).replace(/[^0-9]/g, '');
+        const inputCnicClean = String(field.value).replace(/[^0-9]/g, '');
+        return dbCnicClean === inputCnicClean;
+      }
+      return String(masterUser[field.key]).toLowerCase().trim() === String(field.value).toLowerCase().trim();
+    });
 
     if (!isMatch) {
-      const mismatches = fieldsToMatch.filter(field => 
-        String(masterUser[field.key]).toLowerCase().trim() !== String(field.value).toLowerCase().trim()
-      ).map(m => m.label).join(', ');
+      const mismatches = fieldsToMatch.filter(field => {
+        if (field.key === 'cnic') {
+          const dbCnicClean = String(masterUser.cnic).replace(/[^0-9]/g, '');
+          const inputCnicClean = String(field.value).replace(/[^0-9]/g, '');
+          return dbCnicClean !== inputCnicClean;
+        }
+        return String(masterUser[field.key]).toLowerCase().trim() !== String(field.value).toLowerCase().trim();
+      }).map(m => m.label).join(', ');
       throw new ApiError(400, `Registration failed: Data Mismatch (${mismatches}) with Master Portal.`);
     }
 
@@ -68,8 +93,8 @@ class CandidateService {
       const dbCourse = String(c).toLowerCase().trim();
       // Match if equal, or if either string contains the other (e.g., handles "PYTHON PROGRAMIING" vs "Python Programming for Everyone")
       return dbCourse.includes(selectedCourse) || selectedCourse.includes(dbCourse) ||
-             dbCourse.replace(/[^a-z0-9]/g, '').includes(selectedCourse.replace(/[^a-z0-9]/g, '')) ||
-             selectedCourse.replace(/[^a-z0-9]/g, '').includes(dbCourse.replace(/[^a-z0-9]/g, ''));
+        dbCourse.replace(/[^a-z0-9]/g, '').includes(selectedCourse.replace(/[^a-z0-9]/g, '')) ||
+        selectedCourse.replace(/[^a-z0-9]/g, '').includes(dbCourse.replace(/[^a-z0-9]/g, ''));
     });
 
     if (!hasCourse) {
@@ -112,15 +137,18 @@ class CandidateService {
       if (!fs.existsSync(uploadsDir)) {
         fs.mkdirSync(uploadsDir, { recursive: true });
       }
-      
+
       const base64Data = candidateData.profileImage.replace(/^data:image\/\w+;base64,/, '');
       const buffer = Buffer.from(base64Data, 'base64');
       const fileName = `student_${trimmedRoll}_${Date.now()}.jpg`;
       const filePath = path.join(uploadsDir, fileName);
       fs.writeFileSync(filePath, buffer);
-      
+
       imagePath = `/uploads/${fileName}`;
     }
+
+    const crypto = require('crypto');
+    const qrSecureToken = crypto.randomBytes(16).toString('hex');
 
     const savedCandidate = await candidateRepository.create({
       ...candidateData,
@@ -128,6 +156,7 @@ class CandidateService {
       district,
       tehsil,
       institute,
+      qrSecureToken,
       verificationStatus: 'verified'
     });
 
@@ -138,9 +167,16 @@ class CandidateService {
     return savedCandidate;
   }
 
+  async getCandidateByCnic(cnic) {
+    const cleanCnic = cnic.replace(/[^0-9]/g, '');
+    const pattern = cleanCnic.split('').join('-?');
+    const regex = new RegExp(`^${pattern}$`);
+    return await candidateRepository.findOne({ cnic: { $regex: regex }, isDeleted: { $ne: true } });
+  }
+
   async getCandidates(filters, paginationOptions) {
     const cacheKey = `candidates:${JSON.stringify(filters)}:${JSON.stringify(paginationOptions)}`;
-    
+
     // Check Redis cache first
     const cachedResult = await redisService.get(cacheKey);
     if (cachedResult) {
@@ -305,7 +341,7 @@ class CandidateService {
     if (filters.verification && filters.verification !== 'All') match.verificationStatus = { $regex: `^${filters.verification}$`, $options: 'i' };
     if (filters.course && filters.course !== 'All') match.course = { $regex: filters.course, $options: 'i' };
     if (filters.status && filters.status !== 'All') match.status = { $regex: `^${filters.status}$`, $options: 'i' };
-    
+
     if (filters.startDate || filters.endDate) {
       match.createdAt = {};
       if (filters.startDate) match.createdAt.$gte = new Date(filters.startDate);
@@ -374,7 +410,7 @@ class CandidateService {
 
   async getDashboardStats() {
     const cacheKey = 'stats:dashboard';
-    
+
     // Check Redis cache first
     const cachedStats = await redisService.get(cacheKey);
     if (cachedStats) {
@@ -402,7 +438,7 @@ class CandidateService {
       candidateRepository.countDocuments({ isDeleted: { $ne: true } }),
       candidateRepository.countDocuments({ verificationStatus: 'verified', isDeleted: { $ne: true } }),
       candidateRepository.countDocuments({ status: 'Pending', isDeleted: { $ne: true } }),
-      
+
       // Preferred Exam Cities Breakdown
       candidateRepository.model.aggregate([
         { $match: { isDeleted: { $ne: true } } },

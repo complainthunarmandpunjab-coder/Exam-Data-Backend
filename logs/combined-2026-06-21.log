@@ -1,0 +1,181 @@
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 21:56:13"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-06-21 21:56:14"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 21:56:14"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 21:56:14"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:00:47"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-21 22:00:50"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:00:50"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:00:50"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:01:43"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:01:44"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-21 22:01:44"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:01:44"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:03:34"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:03:37"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-21 22:03:37"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:03:37"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:03:53"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:03:54"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-06-21 22:03:54"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:03:54"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:04:15"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-06-21 22:04:17"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:04:17"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:04:17"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:23:09"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-21 22:23:10"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:23:10"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:23:10"}
+{"level":"info","message":"POST /api/login 200 - 28ms - IP: ::1","timestamp":"2026-06-21 22:26:11"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 200 - 249ms - IP: ::1","timestamp":"2026-06-21 22:26:12"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 228ms - IP: ::1","timestamp":"2026-06-21 22:26:12"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 773ms - IP: ::1","timestamp":"2026-06-21 22:26:12"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:27:07"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:27:08"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-21 22:27:08"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:27:08"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 134ms - IP: ::1","timestamp":"2026-06-21 22:27:16"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:27:22"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:27:23"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-21 22:27:23"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:27:23"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:27:27"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-21 22:27:28"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:27:28"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:27:28"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:27:35"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-06-21 22:27:36"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:27:36"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:27:36"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-21 22:27:43"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-21 22:27:44"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-21 22:27:44"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-21 22:27:44"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 200 - 276ms - IP: ::1","timestamp":"2026-06-21 22:27:47"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 339ms - IP: ::1","timestamp":"2026-06-21 22:27:47"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 931ms - IP: ::1","timestamp":"2026-06-21 22:27:48"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-21 22:29:39"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 180ms - IP: ::1","timestamp":"2026-06-21 22:29:39"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 231ms - IP: ::1","timestamp":"2026-06-21 22:29:39"}
+{"level":"info","message":"GET /api/team-members 200 - 286ms - IP: ::1","timestamp":"2026-06-21 22:29:39"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 200 - 390ms - IP: ::1","timestamp":"2026-06-21 22:29:40"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 210ms - IP: ::1","timestamp":"2026-06-21 22:29:50"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 157ms - IP: ::1","timestamp":"2026-06-21 22:29:55"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 164ms - IP: ::1","timestamp":"2026-06-21 22:30:00"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 162ms - IP: ::1","timestamp":"2026-06-21 22:30:05"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 169ms - IP: ::1","timestamp":"2026-06-21 22:30:10"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:30:15"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 170ms - IP: ::1","timestamp":"2026-06-21 22:30:21"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 164ms - IP: ::1","timestamp":"2026-06-21 22:30:26"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 151ms - IP: ::1","timestamp":"2026-06-21 22:30:31"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 157ms - IP: ::1","timestamp":"2026-06-21 22:30:36"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 165ms - IP: ::1","timestamp":"2026-06-21 22:30:41"}
+{"level":"info","message":"POST /api/team-members 201 - 451ms - IP: ::1","timestamp":"2026-06-21 22:30:46"}
+{"level":"info","message":"GET /api/team-members 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:30:46"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 155ms - IP: ::1","timestamp":"2026-06-21 22:30:46"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 157ms - IP: ::1","timestamp":"2026-06-21 22:30:51"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 159ms - IP: ::1","timestamp":"2026-06-21 22:30:57"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 156ms - IP: ::1","timestamp":"2026-06-21 22:31:02"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 231ms - IP: ::1","timestamp":"2026-06-21 22:31:07"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 164ms - IP: ::1","timestamp":"2026-06-21 22:31:12"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 162ms - IP: ::1","timestamp":"2026-06-21 22:31:17"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:31:23"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:31:28"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 181ms - IP: ::1","timestamp":"2026-06-21 22:31:33"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 204ms - IP: ::1","timestamp":"2026-06-21 22:31:38"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 157ms - IP: ::1","timestamp":"2026-06-21 22:31:43"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 197ms - IP: ::1","timestamp":"2026-06-21 22:31:49"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 167ms - IP: ::1","timestamp":"2026-06-21 22:31:54"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 160ms - IP: ::1","timestamp":"2026-06-21 22:31:59"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 217ms - IP: ::1","timestamp":"2026-06-21 22:32:04"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 209ms - IP: ::1","timestamp":"2026-06-21 22:32:09"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 174ms - IP: ::1","timestamp":"2026-06-21 22:32:15"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 184ms - IP: ::1","timestamp":"2026-06-21 22:32:20"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 165ms - IP: ::1","timestamp":"2026-06-21 22:32:25"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 162ms - IP: ::1","timestamp":"2026-06-21 22:32:30"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 175ms - IP: ::1","timestamp":"2026-06-21 22:32:35"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:32:40"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:32:46"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 165ms - IP: ::1","timestamp":"2026-06-21 22:32:51"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 165ms - IP: ::1","timestamp":"2026-06-21 22:32:56"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 189ms - IP: ::1","timestamp":"2026-06-21 22:33:01"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:33:06"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 177ms - IP: ::1","timestamp":"2026-06-21 22:33:12"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 168ms - IP: ::1","timestamp":"2026-06-21 22:33:17"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 155ms - IP: ::1","timestamp":"2026-06-21 22:33:22"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:33:27"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:33:32"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 157ms - IP: ::1","timestamp":"2026-06-21 22:33:37"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 216ms - IP: ::1","timestamp":"2026-06-21 22:33:43"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 156ms - IP: ::1","timestamp":"2026-06-21 22:33:48"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 160ms - IP: ::1","timestamp":"2026-06-21 22:33:53"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 157ms - IP: ::1","timestamp":"2026-06-21 22:33:58"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:34:03"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:34:08"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:34:14"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:34:19"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:34:24"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:34:29"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:34:34"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 158ms - IP: ::1","timestamp":"2026-06-21 22:34:39"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 156ms - IP: ::1","timestamp":"2026-06-21 22:34:45"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 157ms - IP: ::1","timestamp":"2026-06-21 22:34:50"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:34:55"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 173ms - IP: ::1","timestamp":"2026-06-21 22:35:00"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 156ms - IP: ::1","timestamp":"2026-06-21 22:35:05"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 165ms - IP: ::1","timestamp":"2026-06-21 22:35:10"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:35:16"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 155ms - IP: ::1","timestamp":"2026-06-21 22:35:21"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 173ms - IP: ::1","timestamp":"2026-06-21 22:35:26"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:35:31"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:35:36"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 155ms - IP: ::1","timestamp":"2026-06-21 22:35:41"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 166ms - IP: ::1","timestamp":"2026-06-21 22:35:47"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:35:52"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 156ms - IP: ::1","timestamp":"2026-06-21 22:35:57"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:36:02"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 169ms - IP: ::1","timestamp":"2026-06-21 22:36:07"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:36:12"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:36:18"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:36:23"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 155ms - IP: ::1","timestamp":"2026-06-21 22:36:28"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 166ms - IP: ::1","timestamp":"2026-06-21 22:36:33"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:36:38"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 284ms - IP: ::1","timestamp":"2026-06-21 22:36:44"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 190ms - IP: ::1","timestamp":"2026-06-21 22:36:49"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 159ms - IP: ::1","timestamp":"2026-06-21 22:36:54"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 164ms - IP: ::1","timestamp":"2026-06-21 22:36:59"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 221ms - IP: ::1","timestamp":"2026-06-21 22:37:04"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 172ms - IP: ::1","timestamp":"2026-06-21 22:37:10"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 155ms - IP: ::1","timestamp":"2026-06-21 22:37:15"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 168ms - IP: ::1","timestamp":"2026-06-21 22:37:20"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 161ms - IP: ::1","timestamp":"2026-06-21 22:37:25"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:37:30"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 200ms - IP: ::1","timestamp":"2026-06-21 22:37:36"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 176ms - IP: ::1","timestamp":"2026-06-21 22:37:41"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:37:46"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 167ms - IP: ::1","timestamp":"2026-06-21 22:37:51"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 201ms - IP: ::1","timestamp":"2026-06-21 22:37:56"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 157ms - IP: ::1","timestamp":"2026-06-21 22:38:01"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 183ms - IP: ::1","timestamp":"2026-06-21 22:38:07"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 186ms - IP: ::1","timestamp":"2026-06-21 22:38:12"}
+{"level":"info","message":"GET /api/audit-logs?tab=team 200 - 205ms - IP: ::1","timestamp":"2026-06-21 22:38:17"}
+{"level":"info","message":"POST /api/login 200 - 326ms - IP: ::1","timestamp":"2026-06-21 22:38:29"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 200 - 338ms - IP: ::1","timestamp":"2026-06-21 22:38:29"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 320ms - IP: ::1","timestamp":"2026-06-21 22:38:29"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 326ms - IP: ::1","timestamp":"2026-06-21 22:38:29"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 995ms - IP: ::1","timestamp":"2026-06-21 22:38:30"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 160ms - IP: ::1","timestamp":"2026-06-21 22:38:34"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:38:40"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 182ms - IP: ::1","timestamp":"2026-06-21 22:38:45"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=true 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:38:47"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 200 - 1ms - IP: ::1","timestamp":"2026-06-21 22:38:50"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:38:50"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 155ms - IP: ::1","timestamp":"2026-06-21 22:38:55"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 154ms - IP: ::1","timestamp":"2026-06-21 22:39:00"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 153ms - IP: ::1","timestamp":"2026-06-21 22:39:06"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 183ms - IP: ::1","timestamp":"2026-06-21 22:41:08"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-21 22:41:23"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 126ms - IP: ::1","timestamp":"2026-06-21 22:41:23"}
+{"level":"info","message":"GET /api/audit-logs?tab=grid 200 - 130ms - IP: ::1","timestamp":"2026-06-21 22:41:23"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false 200 - 248ms - IP: ::1","timestamp":"2026-06-21 22:41:24"}

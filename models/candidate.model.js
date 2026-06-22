@@ -18,6 +18,7 @@ const candidateSchema = new mongoose.Schema({
     profileImage: { type: String, default: '' },
     verificationStatus: { type: String, default: 'unverified' },
     status: { type: String, default: 'Pending' },
+    qrSecureToken: { type: String, unique: true, sparse: true },
     isDeleted: { type: Boolean, default: false },
     deletedAt: { type: Date, default: null }
 }, { timestamps: true });
@@ -35,6 +36,7 @@ candidateSchema.index({ institute: 1 });
 candidateSchema.index({ district: 1, tehsil: 1, institute: 1 });
 candidateSchema.index({ status: 1 });
 candidateSchema.index({ isDeleted: 1 });
+candidateSchema.index({ qrSecureToken: 1 });
 candidateSchema.index({ createdAt: -1 });
 
 // Compound Index for compound searching & filtering performance

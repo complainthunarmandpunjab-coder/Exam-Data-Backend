@@ -8,7 +8,7 @@ const envSchema = Joi.object({
   MASTER_MONGODB_URI: Joi.string().required().description('Master Database connection string'),
   JWT_SECRET: Joi.string().default('hunarmand_secret_key'),
   ADMIN_USERNAME: Joi.string().default('admin'),
-  ADMIN_PASSWORD: Joi.string().default('0@02'),
+  ADMIN_PASSWORD: Joi.string().empty('').default('0@02'),
   REDIS_HOST: Joi.string().default('127.0.0.1'),
   REDIS_PORT: Joi.number().default(6379),
   SMTP_HOST: Joi.string().allow(''),

@@ -11,6 +11,31 @@ class CandidateController {
     }
   };
 
+  getAdmitCardPdf = async (req, res, next) => {
+    try {
+      const { cnic } = req.params;
+      // Strip any hyphens or spaces for clean lookup
+      const cleanCnic = cnic.replace(/[^0-9]/g, '');
+      const candidate = await candidateService.getCandidateByCnic(cleanCnic);
+      if (!candidate) {
+        return res.status(404).json({ 
+          success: false, 
+          message: 'No registration found for this CNIC. / اس شناختی کارڈ پر کوئی رجسٹریشن نہیں ملی۔' 
+        });
+      }
+
+      const pdfService = require('../services/pdf.service');
+      const hostUrl = `${req.protocol}://${req.get('host')}`;
+      const pdfBuffer = await pdfService.generateAdmitCard(candidate, hostUrl);
+
+      res.setHeader('Content-Type', 'application/pdf');
+      res.setHeader('Content-Disposition', `attachment; filename=RollNumberSlip_${cleanCnic}.pdf`);
+      res.send(pdfBuffer);
+    } catch (error) {
+      next(error);
+    }
+  };
+
   getCandidates = async (req, res, next) => {
     try {
       const { 

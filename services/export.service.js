@@ -81,7 +81,7 @@ class ExportService {
       // Map filters to Mongo query (exclude soft deleted records by default)
       const query = { isDeleted: { $ne: true } };
       const { filters } = job;
-      
+
       if (filters.gender && filters.gender !== 'All') query.gender = { $regex: `^${filters.gender}$`, $options: 'i' };
       if (filters.city && filters.city !== 'All') query.city = { $regex: `^${filters.city}$`, $options: 'i' };
       if (filters.preferredExamCity && filters.preferredExamCity !== 'All') query.preferredExamCity = { $regex: `^${filters.preferredExamCity}$`, $options: 'i' };
@@ -122,7 +122,7 @@ class ExportService {
 
       // Query database using stream cursor for optimal memory
       const cursor = candidateRepository.model.find(query).lean().cursor();
-      
+
       let processed = 0;
       let lastProgressUpdate = 0;
 
@@ -149,7 +149,7 @@ class ExportService {
 
         processed++;
         const currentProgress = Math.round((processed / totalCount) * 100);
-        
+
         // Batch progress updates every 5% to avoid high DB write lock
         if (currentProgress - lastProgressUpdate >= 5) {
           job.progress = currentProgress;

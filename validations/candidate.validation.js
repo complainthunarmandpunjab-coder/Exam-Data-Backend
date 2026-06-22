@@ -11,7 +11,11 @@ const registerSchema = Joi.object({
   preferredExamCity: Joi.string().required().trim(),
   batch: Joi.string().required().trim(),
   course: Joi.string().required().trim(),
-  rollNumber: Joi.string().required().trim()
+  rollNumber: Joi.string().required().trim(),
+  profileImage: Joi.string().required().messages({
+    'string.empty': 'Profile image is required / تصویر اپلوڈ کرنا لازمی ہے',
+    'any.required': 'Profile image is required / تصویر اپلوڈ کرنا لازمی ہے'
+  })
 });
 
 const querySchema = Joi.object({
