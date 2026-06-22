@@ -32,27 +32,14 @@ This API handles student registration validations, credentials matching with the
    npm install
    ```
 
-2. **Configure Environment Variables**:
-   Create a `.env` file in the root backend directory:
-   ```env
-   MONGODB_URI=your_primary_db_uri
-   MASTER_MONGODB_URI=your_master_db_uri
-   PORT=5001
-   JWT_SECRET=your_secret_key
-   REDIS_HOST=127.0.0.1
-   REDIS_PORT=6379
-   ```
-
-3. **Start Development Server**:
+2. **Start Development Server**:
    ```bash
    npm run dev
-   # or
-   nodemon ./server.js
    ```
 
-4. **Start Production Service**:
+3. **Start Production Service**:
    ```bash
-   pm2 start ecosystem.config.js
+   npm run start
    ```
 
 ---
