@@ -1,0 +1,1075 @@
+{"level":"info","message":"POST /api/auth/login 200 - 124ms - IP: ::1","timestamp":"2026-06-23 00:32:05"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 160ms - IP: ::1","timestamp":"2026-06-23 00:32:06"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 385ms - IP: ::1","timestamp":"2026-06-23 00:32:06"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 897ms - IP: ::1","timestamp":"2026-06-23 00:32:07"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:32:18"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:32:18"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1773ms - IP: ::1","timestamp":"2026-06-23 00:44:05"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 1280ms - IP: ::1","timestamp":"2026-06-23 00:44:05"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3075ms - IP: ::1","timestamp":"2026-06-23 00:44:06"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=true 200 - 119ms - IP: ::1","timestamp":"2026-06-23 00:44:23"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=slipGeneratedByCourse 200 - 165ms - IP: ::1","timestamp":"2026-06-23 00:44:23"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:44:55"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 118ms - IP: ::1","timestamp":"2026-06-23 00:44:55"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 248ms - IP: ::1","timestamp":"2026-06-23 00:44:56"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 4ms - IP: ::1","timestamp":"2026-06-23 00:50:46"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 128ms - IP: ::1","timestamp":"2026-06-23 00:50:47"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 315ms - IP: ::1","timestamp":"2026-06-23 00:50:47"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:50:51"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:50:51"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 122ms - IP: ::1","timestamp":"2026-06-23 00:50:51"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:51:22"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 117ms - IP: ::1","timestamp":"2026-06-23 00:51:22"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 257ms - IP: ::1","timestamp":"2026-06-23 00:51:22"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:51:22"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:51:22"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 119ms - IP: ::1","timestamp":"2026-06-23 00:51:23"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:51:30"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:51:30"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 118ms - IP: ::1","timestamp":"2026-06-23 00:51:30"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:51:38"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:51:38"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 124ms - IP: ::1","timestamp":"2026-06-23 00:51:38"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:51:55"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 119ms - IP: ::1","timestamp":"2026-06-23 00:51:55"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 271ms - IP: ::1","timestamp":"2026-06-23 00:51:56"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:51:58"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:51:58"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 116ms - IP: ::1","timestamp":"2026-06-23 00:51:58"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:52:29"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 119ms - IP: ::1","timestamp":"2026-06-23 00:52:29"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 244ms - IP: ::1","timestamp":"2026-06-23 00:52:29"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:52:32"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:52:32"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 122ms - IP: ::1","timestamp":"2026-06-23 00:52:33"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:52:46"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 116ms - IP: ::1","timestamp":"2026-06-23 00:52:46"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 0ms - IP: ::1","timestamp":"2026-06-23 00:53:36"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 130ms - IP: ::1","timestamp":"2026-06-23 00:53:36"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 258ms - IP: ::1","timestamp":"2026-06-23 00:53:36"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:53:40"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:53:40"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 122ms - IP: ::1","timestamp":"2026-06-23 00:53:40"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:53:44"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:53:44"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 126ms - IP: ::1","timestamp":"2026-06-23 00:53:44"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:53:48"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:53:48"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 137ms - IP: ::1","timestamp":"2026-06-23 00:53:48"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 139ms - IP: ::1","timestamp":"2026-06-23 00:54:22"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 191ms - IP: ::1","timestamp":"2026-06-23 00:54:23"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1131ms - IP: ::1","timestamp":"2026-06-23 00:54:23"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 5ms - IP: ::1","timestamp":"2026-06-23 00:54:29"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:54:29"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 127ms - IP: ::1","timestamp":"2026-06-23 00:54:29"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 4ms - IP: ::1","timestamp":"2026-06-23 00:54:34"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:54:34"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 303ms - IP: ::1","timestamp":"2026-06-23 00:54:35"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=slipGeneratedByCourse 200 - 116ms - IP: ::1","timestamp":"2026-06-23 00:54:45"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=true 200 - 123ms - IP: ::1","timestamp":"2026-06-23 00:54:45"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:56:34"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 136ms - IP: ::1","timestamp":"2026-06-23 00:56:34"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 281ms - IP: ::1","timestamp":"2026-06-23 00:56:34"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:57:59"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 165ms - IP: ::1","timestamp":"2026-06-23 00:57:59"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 296ms - IP: ::1","timestamp":"2026-06-23 00:58:00"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:58:05"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:58:05"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 119ms - IP: ::1","timestamp":"2026-06-23 00:58:05"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:58:10"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 5ms - IP: ::1","timestamp":"2026-06-23 00:58:10"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 116ms - IP: ::1","timestamp":"2026-06-23 00:58:10"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:58:23"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:58:23"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 172ms - IP: ::1","timestamp":"2026-06-23 00:58:24"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:58:39"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 119ms - IP: ::1","timestamp":"2026-06-23 00:58:39"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 248ms - IP: ::1","timestamp":"2026-06-23 00:58:39"}
+{"level":"info","message":"GET /api/candidates?page=2&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 242ms - IP: ::1","timestamp":"2026-06-23 00:58:53"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 6ms - IP: ::1","timestamp":"2026-06-23 00:59:06"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:59:06"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 119ms - IP: ::1","timestamp":"2026-06-23 00:59:06"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:59:26"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 117ms - IP: ::1","timestamp":"2026-06-23 00:59:26"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 238ms - IP: ::1","timestamp":"2026-06-23 00:59:26"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-23 00:59:33"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:59:33"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 117ms - IP: ::1","timestamp":"2026-06-23 00:59:33"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:59:44"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:59:44"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 158ms - IP: ::1","timestamp":"2026-06-23 00:59:44"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 00:59:52"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 00:59:52"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 119ms - IP: ::1","timestamp":"2026-06-23 00:59:52"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:00:03"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 157ms - IP: ::1","timestamp":"2026-06-23 01:00:03"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 266ms - IP: ::1","timestamp":"2026-06-23 01:00:03"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 2547ms - IP: ::1","timestamp":"2026-06-23 01:00:05"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 5ms - IP: ::1","timestamp":"2026-06-23 01:00:06"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 164ms - IP: ::1","timestamp":"2026-06-23 01:00:07"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 217ms - IP: ::1","timestamp":"2026-06-23 01:00:07"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 407ms - IP: ::1","timestamp":"2026-06-23 01:00:07"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:00:24"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 168ms - IP: ::1","timestamp":"2026-06-23 01:00:24"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 220ms - IP: ::1","timestamp":"2026-06-23 01:00:24"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 351ms - IP: ::1","timestamp":"2026-06-23 01:00:24"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:00:27"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 130ms - IP: ::1","timestamp":"2026-06-23 01:00:27"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 164ms - IP: ::1","timestamp":"2026-06-23 01:00:27"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 257ms - IP: ::1","timestamp":"2026-06-23 01:00:27"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:00:34"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 202ms - IP: ::1","timestamp":"2026-06-23 01:00:34"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 352ms - IP: ::1","timestamp":"2026-06-23 01:00:34"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:00:52"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 123ms - IP: ::1","timestamp":"2026-06-23 01:00:52"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 135ms - IP: ::1","timestamp":"2026-06-23 01:00:52"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 246ms - IP: ::1","timestamp":"2026-06-23 01:00:52"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:01:09"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 150ms - IP: ::1","timestamp":"2026-06-23 01:01:09"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 148ms - IP: ::1","timestamp":"2026-06-23 01:01:10"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 261ms - IP: ::1","timestamp":"2026-06-23 01:01:10"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:01:15"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 135ms - IP: ::1","timestamp":"2026-06-23 01:01:15"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 147ms - IP: ::1","timestamp":"2026-06-23 01:01:15"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 265ms - IP: ::1","timestamp":"2026-06-23 01:01:15"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:01:24"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 122ms - IP: ::1","timestamp":"2026-06-23 01:01:24"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 135ms - IP: ::1","timestamp":"2026-06-23 01:01:24"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 310ms - IP: ::1","timestamp":"2026-06-23 01:01:24"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:01:34"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 164ms - IP: ::1","timestamp":"2026-06-23 01:01:34"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 208ms - IP: ::1","timestamp":"2026-06-23 01:01:34"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 331ms - IP: ::1","timestamp":"2026-06-23 01:01:34"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:01:40"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 115ms - IP: ::1","timestamp":"2026-06-23 01:01:40"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 138ms - IP: ::1","timestamp":"2026-06-23 01:01:40"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 245ms - IP: ::1","timestamp":"2026-06-23 01:01:40"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:01:41"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 133ms - IP: ::1","timestamp":"2026-06-23 01:01:41"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 133ms - IP: ::1","timestamp":"2026-06-23 01:01:41"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 248ms - IP: ::1","timestamp":"2026-06-23 01:01:41"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:01:42"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 125ms - IP: ::1","timestamp":"2026-06-23 01:01:42"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 137ms - IP: ::1","timestamp":"2026-06-23 01:01:42"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 256ms - IP: ::1","timestamp":"2026-06-23 01:01:42"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:28:58"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 184ms - IP: ::1","timestamp":"2026-06-23 01:28:58"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 171ms - IP: ::1","timestamp":"2026-06-23 01:28:58"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 346ms - IP: ::1","timestamp":"2026-06-23 01:28:59"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:29:06"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:29:06"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 156ms - IP: ::1","timestamp":"2026-06-23 01:29:06"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 5ms - IP: ::1","timestamp":"2026-06-23 01:33:15"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 200ms - IP: ::1","timestamp":"2026-06-23 01:33:15"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 406ms - IP: ::1","timestamp":"2026-06-23 01:33:15"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:33:31"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:33:31"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 176ms - IP: ::1","timestamp":"2026-06-23 01:33:31"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:34:42"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 119ms - IP: ::1","timestamp":"2026-06-23 01:34:42"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 241ms - IP: ::1","timestamp":"2026-06-23 01:34:42"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:34:44"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 181ms - IP: ::1","timestamp":"2026-06-23 01:34:44"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 188ms - IP: ::1","timestamp":"2026-06-23 01:34:44"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 354ms - IP: ::1","timestamp":"2026-06-23 01:34:44"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:36:45"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 117ms - IP: ::1","timestamp":"2026-06-23 01:36:46"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 134ms - IP: ::1","timestamp":"2026-06-23 01:36:46"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 239ms - IP: ::1","timestamp":"2026-06-23 01:36:46"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:37:03"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:37:03"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 118ms - IP: ::1","timestamp":"2026-06-23 01:37:04"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 0ms - IP: ::1","timestamp":"2026-06-23 01:37:11"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 174ms - IP: ::1","timestamp":"2026-06-23 01:37:11"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 215ms - IP: ::1","timestamp":"2026-06-23 01:37:11"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 326ms - IP: ::1","timestamp":"2026-06-23 01:37:12"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:37:23"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 163ms - IP: ::1","timestamp":"2026-06-23 01:37:23"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 322ms - IP: ::1","timestamp":"2026-06-23 01:37:23"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:39:19"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 320ms - IP: ::1","timestamp":"2026-06-23 01:39:19"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 616ms - IP: ::1","timestamp":"2026-06-23 01:39:19"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 767ms - IP: ::1","timestamp":"2026-06-23 01:39:20"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 4ms - IP: ::1","timestamp":"2026-06-23 01:39:23"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:23"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 161ms - IP: ::1","timestamp":"2026-06-23 01:39:23"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:39:28"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:28"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 157ms - IP: ::1","timestamp":"2026-06-23 01:39:28"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 184ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 209ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 607ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 163ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 185ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:29"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 158ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 371ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 188ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 198ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 197ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 247ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 7ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 234ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 445ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:30"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 279ms - IP: ::1","timestamp":"2026-06-23 01:39:31"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 403ms - IP: ::1","timestamp":"2026-06-23 01:39:31"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:39:31"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 156ms - IP: ::1","timestamp":"2026-06-23 01:39:31"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 429ms - IP: ::1","timestamp":"2026-06-23 01:39:31"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:40:22"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 198ms - IP: ::1","timestamp":"2026-06-23 01:40:23"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 402ms - IP: ::1","timestamp":"2026-06-23 01:40:23"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:40:31"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:40:31"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 157ms - IP: ::1","timestamp":"2026-06-23 01:40:31"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:40:35"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 187ms - IP: ::1","timestamp":"2026-06-23 01:40:35"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 201ms - IP: ::1","timestamp":"2026-06-23 01:40:35"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 352ms - IP: ::1","timestamp":"2026-06-23 01:40:35"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:40:39"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 169ms - IP: ::1","timestamp":"2026-06-23 01:40:39"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 175ms - IP: ::1","timestamp":"2026-06-23 01:40:39"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 320ms - IP: ::1","timestamp":"2026-06-23 01:40:39"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=slipGeneratedByCourse 200 - 159ms - IP: ::1","timestamp":"2026-06-23 01:40:42"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=true 200 - 166ms - IP: ::1","timestamp":"2026-06-23 01:40:42"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:40:44"}
+{"level":"info","message":"GET /api/results?page=1&limit=50&search= 200 - 314ms - IP: ::1","timestamp":"2026-06-23 01:40:44"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:41:21"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 217ms - IP: ::1","timestamp":"2026-06-23 01:41:22"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 228ms - IP: ::1","timestamp":"2026-06-23 01:41:22"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 548ms - IP: ::1","timestamp":"2026-06-23 01:41:22"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:41:26"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:41:27"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 154ms - IP: ::1","timestamp":"2026-06-23 01:41:28"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 187ms - IP: ::1","timestamp":"2026-06-23 01:41:28"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 318ms - IP: ::1","timestamp":"2026-06-23 01:41:28"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:41:33"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:41:33"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 155ms - IP: ::1","timestamp":"2026-06-23 01:41:33"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:41:49"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 167ms - IP: ::1","timestamp":"2026-06-23 01:41:49"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 173ms - IP: ::1","timestamp":"2026-06-23 01:41:49"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 518ms - IP: ::1","timestamp":"2026-06-23 01:41:49"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:41:52"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 168ms - IP: ::1","timestamp":"2026-06-23 01:41:53"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 181ms - IP: ::1","timestamp":"2026-06-23 01:41:53"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 331ms - IP: ::1","timestamp":"2026-06-23 01:41:53"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:42:23"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 160ms - IP: ::1","timestamp":"2026-06-23 01:42:23"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 335ms - IP: ::1","timestamp":"2026-06-23 01:42:23"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 0ms - IP: ::1","timestamp":"2026-06-23 01:42:25"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 162ms - IP: ::1","timestamp":"2026-06-23 01:42:25"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 183ms - IP: ::1","timestamp":"2026-06-23 01:42:25"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 350ms - IP: ::1","timestamp":"2026-06-23 01:42:25"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 4ms - IP: ::1","timestamp":"2026-06-23 01:43:32"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 177ms - IP: ::1","timestamp":"2026-06-23 01:43:33"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 231ms - IP: ::1","timestamp":"2026-06-23 01:43:33"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 316ms - IP: ::1","timestamp":"2026-06-23 01:43:33"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:43:41"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:43:41"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 219ms - IP: ::1","timestamp":"2026-06-23 01:43:41"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:45:01"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 165ms - IP: ::1","timestamp":"2026-06-23 01:45:01"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 172ms - IP: ::1","timestamp":"2026-06-23 01:45:01"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 340ms - IP: ::1","timestamp":"2026-06-23 01:45:02"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 4ms - IP: ::1","timestamp":"2026-06-23 01:45:21"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:45:21"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 163ms - IP: ::1","timestamp":"2026-06-23 01:45:21"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:46:18"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 162ms - IP: ::1","timestamp":"2026-06-23 01:46:18"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 325ms - IP: ::1","timestamp":"2026-06-23 01:46:18"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:46:27"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:46:27"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 901ms - IP: ::1","timestamp":"2026-06-23 01:46:27"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=slipGeneratedByCourse 200 - 154ms - IP: ::1","timestamp":"2026-06-23 01:46:30"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=true 200 - 538ms - IP: ::1","timestamp":"2026-06-23 01:46:30"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 213ms - IP: ::1","timestamp":"2026-06-23 01:48:04"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 250ms - IP: ::1","timestamp":"2026-06-23 01:48:05"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 336ms - IP: ::1","timestamp":"2026-06-23 01:48:05"}
+{"level":"warn","message":"401 - No token, authorization denied - /api/dashboard/stats - GET - ::1","timestamp":"2026-06-23 01:49:57"}
+{"level":"info","message":"GET /api/dashboard/stats 401 - 3ms - IP: ::1","timestamp":"2026-06-23 01:49:57"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:50:00"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 181ms - IP: ::1","timestamp":"2026-06-23 01:50:01"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 193ms - IP: ::1","timestamp":"2026-06-23 01:50:01"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 330ms - IP: ::1","timestamp":"2026-06-23 01:50:01"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:50:05"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:50:05"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 160ms - IP: ::1","timestamp":"2026-06-23 01:50:05"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:50:11"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:50:11"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 164ms - IP: ::1","timestamp":"2026-06-23 01:50:11"}
+{"level":"info","message":"POST /api/auth/login 200 - 17ms - IP: ::1","timestamp":"2026-06-23 01:50:38"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 179ms - IP: ::1","timestamp":"2026-06-23 01:50:39"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 259ms - IP: ::1","timestamp":"2026-06-23 01:51:47"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 293ms - IP: ::1","timestamp":"2026-06-23 01:51:47"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 442ms - IP: ::1","timestamp":"2026-06-23 01:51:47"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:52:00"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 159ms - IP: ::1","timestamp":"2026-06-23 01:52:00"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 240ms - IP: ::1","timestamp":"2026-06-23 01:52:00"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 0ms - IP: ::1","timestamp":"2026-06-23 01:52:49"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 166ms - IP: ::1","timestamp":"2026-06-23 01:52:49"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 175ms - IP: ::1","timestamp":"2026-06-23 01:52:49"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 636ms - IP: ::1","timestamp":"2026-06-23 01:52:50"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 0ms - IP: ::1","timestamp":"2026-06-23 01:52:53"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 157ms - IP: ::1","timestamp":"2026-06-23 01:52:54"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 172ms - IP: ::1","timestamp":"2026-06-23 01:52:54"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 315ms - IP: ::1","timestamp":"2026-06-23 01:52:54"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 3ms - IP: ::1","timestamp":"2026-06-23 01:53:24"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 184ms - IP: ::1","timestamp":"2026-06-23 01:53:24"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 495ms - IP: ::1","timestamp":"2026-06-23 01:53:24"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:53:27"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 184ms - IP: ::1","timestamp":"2026-06-23 01:53:27"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 158ms - IP: ::1","timestamp":"2026-06-23 01:53:27"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 351ms - IP: ::1","timestamp":"2026-06-23 01:53:27"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 01:54:34"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 234ms - IP: ::1","timestamp":"2026-06-23 01:54:34"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 243ms - IP: ::1","timestamp":"2026-06-23 01:54:34"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 554ms - IP: ::1","timestamp":"2026-06-23 01:54:35"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 01:55:34"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 01:55:36"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-23 01:55:36"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 01:55:36"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 12ms - IP: ::1","timestamp":"2026-06-23 01:58:05"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 359ms - IP: ::1","timestamp":"2026-06-23 01:58:05"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 369ms - IP: ::1","timestamp":"2026-06-23 01:58:06"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1151ms - IP: ::1","timestamp":"2026-06-23 01:58:06"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 4ms - IP: ::1","timestamp":"2026-06-23 01:58:12"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:58:12"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 167ms - IP: ::1","timestamp":"2026-06-23 01:58:13"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:58:16"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:58:16"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 135ms - IP: ::1","timestamp":"2026-06-23 01:58:16"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-23 01:58:20"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 500ms - IP: ::1","timestamp":"2026-06-23 01:58:20"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 530ms - IP: ::1","timestamp":"2026-06-23 01:58:20"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1284ms - IP: ::1","timestamp":"2026-06-23 01:58:21"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 02:07:31"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 321ms - IP: ::1","timestamp":"2026-06-23 02:07:31"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 02:07:50"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 02:07:51"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-23 02:07:51"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 02:07:51"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 711ms - IP: ::1","timestamp":"2026-06-23 02:07:52"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 766ms - IP: ::1","timestamp":"2026-06-23 02:07:52"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1145ms - IP: ::1","timestamp":"2026-06-23 02:07:52"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::1","timestamp":"2026-06-23 02:10:52"}
+{"level":"info","message":"POST /api/register 450 - 285ms - IP: ::1","timestamp":"2026-06-23 02:10:52"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-23 02:11:24"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 246ms - IP: ::1","timestamp":"2026-06-23 02:11:25"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 249ms - IP: ::1","timestamp":"2026-06-23 02:11:25"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2363ms - IP: ::1","timestamp":"2026-06-23 02:11:27"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-23 02:17:17"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 125ms - IP: ::1","timestamp":"2026-06-23 02:17:17"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 254ms - IP: ::1","timestamp":"2026-06-23 02:17:17"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 02:17:40"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 252ms - IP: ::1","timestamp":"2026-06-23 02:17:40"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 253ms - IP: ::1","timestamp":"2026-06-23 02:17:40"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2639ms - IP: ::1","timestamp":"2026-06-23 02:17:43"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-23 02:17:46"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-06-23 02:17:46"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 124ms - IP: ::1","timestamp":"2026-06-23 02:17:46"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-23 02:17:49"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 254ms - IP: ::1","timestamp":"2026-06-23 02:17:49"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 984ms - IP: ::1","timestamp":"2026-06-23 02:17:50"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1049ms - IP: ::1","timestamp":"2026-06-23 02:17:50"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 136ms - IP: ::1","timestamp":"2026-06-23 02:18:41"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 146ms - IP: ::1","timestamp":"2026-06-23 02:18:41"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 245ms - IP: ::1","timestamp":"2026-06-23 02:18:41"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-23 02:18:43"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 150ms - IP: ::1","timestamp":"2026-06-23 02:18:44"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 170ms - IP: ::1","timestamp":"2026-06-23 02:18:44"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 339ms - IP: ::1","timestamp":"2026-06-23 02:18:44"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-23 02:21:17"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 168ms - IP: ::1","timestamp":"2026-06-23 02:21:17"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 187ms - IP: ::1","timestamp":"2026-06-23 02:21:17"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 306ms - IP: ::1","timestamp":"2026-06-23 02:21:17"}
+{"level":"info","message":"POST /api/auth/login 200 - 29ms - IP: ::1","timestamp":"2026-06-23 02:23:12"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 150ms - IP: ::1","timestamp":"2026-06-23 02:23:12"}
+{"level":"info","message":"POST /api/auth/login 200 - 9ms - IP: ::1","timestamp":"2026-06-23 02:42:51"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 153ms - IP: ::1","timestamp":"2026-06-23 02:42:51"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 02:48:15"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 02:48:17"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-23 02:48:17"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 02:48:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 653ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 515ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 475ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 507ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 475ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 463ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 466ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 468ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 473ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 479ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 621ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 626ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 628ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 628ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"info","message":"POST /api/register 450 - 633ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:15"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 764ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 787ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 808ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 810ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 809ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 907ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 927ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 973ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 983ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 983ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1056ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1078ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1117ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1129ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1068ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1138ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1152ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1195ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1266ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1307ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1424ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1317ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1573ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1327ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1335ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1440ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1480ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1753ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1497ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1499ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"info","message":"POST /api/register 450 - 1549ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:16"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1736ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1445ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1533ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1441ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1465ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1595ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1600ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 5ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 2ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1594ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 2ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1646ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1650ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1497ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1488ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1488ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1489ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 3ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 2ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1479ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 2ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 3ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 2ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 3ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 3ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1683ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1816ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1536ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1633ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1619ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1638ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 3ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 3ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1699ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 2545ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 450 - 1643ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:17"}
+{"level":"info","message":"POST /api/register 429 - 1ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 429 - 0ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1600ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1549ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1695ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1539ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 2604ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1629ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1477ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1343ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1465ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1412ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1414ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1549ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 2519ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1403ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1420ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 2755ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1292ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1190ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1298ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1316ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1306ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1258ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1308ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1075ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1198ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1106ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 1924ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 2345ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 2494ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"warn","message":"450 - Registration failed: CNIC and Roll Number do not exist in Master Portal. (آپ کا شناختی کارڈ اور رول نمبر ماسٹر ڈیٹا بیس میں موجود نہیں ہے) - /api/register - POST - ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"POST /api/register 450 - 2073ms - IP: ::ffff:127.0.0.1","timestamp":"2026-06-23 04:26:18"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 04:45:22"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 04:57:30"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 04:57:33"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-23 04:57:33"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 04:57:34"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 05:57:06"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-23 05:57:08"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 05:57:08"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 05:57:08"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 21:43:06"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 21:43:07"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-23 21:43:07"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 21:43:07"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 21:54:07"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-23 21:54:08"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 21:54:08"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 21:54:08"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 319ms - IP: ::1","timestamp":"2026-06-23 21:59:26"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 493ms - IP: ::1","timestamp":"2026-06-23 21:59:26"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1716ms - IP: ::1","timestamp":"2026-06-23 21:59:27"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=true 200 - 155ms - IP: ::1","timestamp":"2026-06-23 21:59:30"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=slipGeneratedByCourse 200 - 163ms - IP: ::1","timestamp":"2026-06-23 21:59:30"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=course&gender=All&city=All&preferredExamCity=All&district=All&course=All&startDate=&endDate= 200 - 162ms - IP: ::1","timestamp":"2026-06-23 22:01:42"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=custom&groupBy=course&gender=All&city=All&preferredExamCity=All&district=All&course=All&startDate=&endDate= 200 - 165ms - IP: ::1","timestamp":"2026-06-23 22:01:42"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=district&gender=All&city=All&preferredExamCity=All&district=All&course=All&startDate=&endDate= 200 - 469ms - IP: ::1","timestamp":"2026-06-23 22:01:42"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 770ms - IP: ::1","timestamp":"2026-06-23 22:01:42"}
+{"level":"info","message":"GET /api/results?page=1&limit=50&search= 200 - 310ms - IP: ::1","timestamp":"2026-06-23 22:01:42"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-23 22:01:42"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-23 22:01:55"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 317ms - IP: ::1","timestamp":"2026-06-23 22:01:56"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 482ms - IP: ::1","timestamp":"2026-06-23 22:01:56"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 957ms - IP: ::1","timestamp":"2026-06-23 22:01:56"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 22:14:12"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 22:14:13"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-06-23 22:14:13"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 22:14:13"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 350ms - IP: ::1","timestamp":"2026-06-23 22:15:10"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 442ms - IP: ::1","timestamp":"2026-06-23 22:15:10"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 847ms - IP: ::1","timestamp":"2026-06-23 22:15:10"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 22:21:24"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 22:21:25"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-23 22:21:25"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 22:21:25"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 22:25:06"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 22:25:07"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-23 22:25:08"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 22:25:08"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 22:59:11"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 22:59:13"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-23 22:59:13"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 22:59:13"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 23:34:42"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 23:34:44"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-23 23:34:44"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 23:34:44"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 23:35:57"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-23 23:35:58"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 23:35:58"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 23:35:58"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 23:37:48"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-23 23:37:50"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 23:37:50"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 23:37:53"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-23 23:40:27"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-23 23:40:29"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-06-23 23:40:29"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-23 23:40:29"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 170ms - IP: ::1","timestamp":"2026-06-23 23:58:12"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 515ms - IP: ::1","timestamp":"2026-06-23 23:58:12"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1129ms - IP: ::1","timestamp":"2026-06-23 23:58:13"}

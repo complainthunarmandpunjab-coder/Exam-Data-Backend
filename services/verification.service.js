@@ -30,7 +30,18 @@ class VerificationService {
 
       // Verify the selected course exists in the student's Master database courses array
       const selectedCourse = course.toLowerCase().trim();
-      const hasCourse = masterUser.courses && masterUser.courses.some(c => {
+
+      // Support both 'courses' (Array) and 'course' (String) fields from Master DB
+      let studentCourses = [];
+      if (masterUser.courses && Array.isArray(masterUser.courses)) {
+        studentCourses = masterUser.courses;
+      } else if (masterUser.course) {
+        studentCourses = [masterUser.course];
+      } else if (masterUser.courses && typeof masterUser.courses === 'string') {
+        studentCourses = [masterUser.courses];
+      }
+
+      const hasCourse = studentCourses.length > 0 && studentCourses.some(c => {
         const dbCourse = String(c).toLowerCase().trim();
         return dbCourse.includes(selectedCourse) || selectedCourse.includes(dbCourse) ||
                dbCourse.replace(/[^a-z0-9]/g, '').includes(selectedCourse.replace(/[^a-z0-9]/g, '')) ||

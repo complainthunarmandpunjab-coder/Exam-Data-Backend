@@ -18,6 +18,13 @@ router.post(
   candidateController.register
 );
 
+router.post(
+  '/admin-register',
+  auth,
+  validate(candidateValidation.registerSchema),
+  candidateController.adminRegister
+);
+
 router.get(
   '/candidates',
   auth,
@@ -65,6 +72,12 @@ router.get(
 );
 
 router.post(
+  '/dashboard/clear-cache',
+  auth,
+  candidateController.clearCache
+);
+
+router.post(
   '/candidates/export',
   auth,
 
@@ -72,9 +85,28 @@ router.post(
 );
 
 router.get(
+  '/candidates/exports/download/:filename',
+  auth,
+  candidateController.downloadExport
+);
+
+router.get(
   '/candidates/export/jobs',
   auth,
   require('../controllers/export.controller').getExportJobs
+);
+
+// QR Code Scan → verify student + mark attendance (PUBLIC — no auth, scanned by exam team)
+router.get(
+  '/candidates/verify-qr',
+  candidateController.verifyByQr
+);
+
+// Admin: get attendance list (who showed up for exam)
+router.get(
+  '/candidates/attendance',
+  auth,
+  candidateController.getAttendance
 );
 
 module.exports = router;

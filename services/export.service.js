@@ -32,7 +32,7 @@ class ExportService {
       await job.save();
 
       // Setup directories
-      const exportsDir = path.join(__dirname, '../public/exports');
+      const exportsDir = path.join(__dirname, '../exports_secure');
       if (!fs.existsSync(exportsDir)) {
         fs.mkdirSync(exportsDir, { recursive: true });
       }
@@ -82,16 +82,18 @@ class ExportService {
       const query = { isDeleted: { $ne: true } };
       const { filters } = job;
 
-      if (filters.gender && filters.gender !== 'All') query.gender = { $regex: `^${filters.gender}$`, $options: 'i' };
-      if (filters.city && filters.city !== 'All') query.city = { $regex: `^${filters.city}$`, $options: 'i' };
-      if (filters.preferredExamCity && filters.preferredExamCity !== 'All') query.preferredExamCity = { $regex: `^${filters.preferredExamCity}$`, $options: 'i' };
-      if (filters.district && filters.district !== 'All') query.district = { $regex: `^${filters.district}$`, $options: 'i' };
-      if (filters.tehsil && filters.tehsil !== 'All') query.tehsil = { $regex: `^${filters.tehsil}$`, $options: 'i' };
-      if (filters.institute && filters.institute !== 'All') query.institute = { $regex: `^${filters.institute}$`, $options: 'i' };
-      if (filters.batch && filters.batch !== 'All') query.batch = { $regex: `^${filters.batch}$`, $options: 'i' };
-      if (filters.verification && filters.verification !== 'All') query.verificationStatus = { $regex: `^${filters.verification}$`, $options: 'i' };
-      if (filters.course && filters.course !== 'All') query.course = { $regex: filters.course, $options: 'i' };
-      if (filters.status && filters.status !== 'All') query.status = { $regex: `^${filters.status}$`, $options: 'i' };
+      const escapeRegex = (text) => text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+
+      if (filters.gender && filters.gender !== 'All') query.gender = { $regex: `^${escapeRegex(filters.gender)}$`, $options: 'i' };
+      if (filters.city && filters.city !== 'All') query.city = { $regex: `^${escapeRegex(filters.city)}$`, $options: 'i' };
+      if (filters.preferredExamCity && filters.preferredExamCity !== 'All') query.preferredExamCity = { $regex: `^${escapeRegex(filters.preferredExamCity)}$`, $options: 'i' };
+      if (filters.district && filters.district !== 'All') query.district = { $regex: `^${escapeRegex(filters.district)}$`, $options: 'i' };
+      if (filters.tehsil && filters.tehsil !== 'All') query.tehsil = { $regex: `^${escapeRegex(filters.tehsil)}$`, $options: 'i' };
+      if (filters.institute && filters.institute !== 'All') query.institute = { $regex: `^${escapeRegex(filters.institute)}$`, $options: 'i' };
+      if (filters.batch && filters.batch !== 'All') query.batch = { $regex: `^${escapeRegex(filters.batch)}$`, $options: 'i' };
+      if (filters.verification && filters.verification !== 'All') query.verificationStatus = { $regex: `^${escapeRegex(filters.verification)}$`, $options: 'i' };
+      if (filters.course && filters.course !== 'All') query.course = { $regex: escapeRegex(filters.course), $options: 'i' };
+      if (filters.status && filters.status !== 'All') query.status = { $regex: `^${escapeRegex(filters.status)}$`, $options: 'i' };
       if (filters.startDate || filters.endDate) {
         query.createdAt = {};
         if (filters.startDate) query.createdAt.$gte = new Date(filters.startDate);
@@ -114,7 +116,7 @@ class ExportService {
         await workbook.commit();
         job.status = 'completed';
         job.progress = 100;
-        job.fileUrl = `/exports/${fileName}`;
+        job.fileUrl = `/api/candidates/exports/download/${fileName}`;
         job.completedAt = new Date();
         await job.save();
         return;
@@ -164,7 +166,7 @@ class ExportService {
       // Finalize job status
       job.status = 'completed';
       job.progress = 100;
-      job.fileUrl = `/exports/${fileName}`;
+      job.fileUrl = `/api/candidates/exports/download/${fileName}`;
       job.completedAt = new Date();
       await job.save();
 

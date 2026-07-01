@@ -1,0 +1,4 @@
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-28 23:16:37"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-28 23:16:39"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-06-28 23:16:39"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-28 23:16:39"}

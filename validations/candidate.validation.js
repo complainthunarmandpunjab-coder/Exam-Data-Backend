@@ -4,7 +4,7 @@ const registerSchema = Joi.object({
   fullName: Joi.string().required().trim().min(3).max(50),
   fatherName: Joi.string().required().trim().min(3).max(50),
   cnic: Joi.string().required().trim().regex(/^(\d{13}|\d{5}-\d{7}-\d{1})$/).message('Invalid CNIC Format'),
-  email: Joi.string().required().trim().email(),
+  email: Joi.string().required().trim(),
   contactNumber: Joi.string().required().trim().min(10).max(15),
   gender: Joi.string().required().valid('Male', 'Female', 'Other'),
   city: Joi.string().required().trim(),

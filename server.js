@@ -40,12 +40,32 @@ app.set('trust proxy', 1);
 app.use(helmet());
 
 // Enable CORS
-app.use(cors({ origin: 'https://exams.hunarmandpunjab.org.pk', credentials: true }));
+const allowedOrigins = [
+  'https://exams.hunarmandpunjab.org.pk',
+  'http://exams.hunarmandpunjab.org.pk',
+  'https://www.exams.hunarmandpunjab.org.pk',
+  'http://www.exams.hunarmandpunjab.org.pk',
+  'https://admin.hunarmandpunjab.org.pk',
+  'http://admin.hunarmandpunjab.org.pk',
+  'https://hunarmandpunjab.org.pk',
+  'http://hunarmandpunjab.org.pk',
+  'http://localhost:5173',
+  'http://localhost:5001'
+];
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
 
-
-// Parse request body parsing limit to protect against large payload attacks
-app.use(express.json({ limit: '100kb' }));
-app.use(express.urlencoded({ extended: true, limit: '100kb' }));
+// Parse request body parsing limit — increased to support base64 image in registration
+app.use(express.json({ limit: '5mb' }));
+app.use(express.urlencoded({ extended: true, limit: '5mb' }));
 
 // Sanitize data against MongoDB Query Injection
 app.use(mongoSanitize);
@@ -75,6 +95,8 @@ app.use('/api/v1/register', submissionLimiter);
 app.use('/api/v1/verify-student', submissionLimiter);
 app.use('/api/register', submissionLimiter);
 app.use('/api/verify-student', submissionLimiter);
+app.use('/api/candidates/admit-card', submissionLimiter);
+app.use('/api/results/public', submissionLimiter);
 
 // API Routes
 app.use('/api/v1', routes);

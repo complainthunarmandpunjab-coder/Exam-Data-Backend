@@ -1,0 +1,42 @@
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-27 00:00:13"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 206ms - IP: ::1","timestamp":"2026-06-27 00:00:13"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 656ms - IP: ::1","timestamp":"2026-06-27 00:00:13"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 317ms - IP: ::1","timestamp":"2026-06-27 00:00:59"}
+{"level":"info","message":"GET /api/candidates/attendance 200 - 7477ms - IP: ::1","timestamp":"2026-06-27 00:01:06"}
+{"level":"info","message":"GET /api/candidates/attendance 200 - 154ms - IP: ::1","timestamp":"2026-06-27 00:01:06"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-27 00:05:16"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 214ms - IP: ::1","timestamp":"2026-06-27 00:05:16"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 375ms - IP: ::1","timestamp":"2026-06-27 00:05:16"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-06-27 04:41:55"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-06-27 04:41:57"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-06-27 04:41:57"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-06-27 04:41:57"}
+{"level":"info","message":"POST /api/auth/login 200 - 13ms - IP: ::1","timestamp":"2026-06-27 04:43:45"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 321ms - IP: ::1","timestamp":"2026-06-27 04:43:46"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 317ms - IP: ::1","timestamp":"2026-06-27 04:43:46"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1009ms - IP: ::1","timestamp":"2026-06-27 04:43:46"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-27 04:43:48"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 323ms - IP: ::1","timestamp":"2026-06-27 04:43:49"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 320ms - IP: ::1","timestamp":"2026-06-27 04:43:49"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 805ms - IP: ::1","timestamp":"2026-06-27 04:43:49"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-27 05:12:37"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-06-27 05:12:37"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 385ms - IP: ::1","timestamp":"2026-06-27 05:12:38"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1ms - IP: ::1","timestamp":"2026-06-27 05:12:38"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1300ms - IP: ::1","timestamp":"2026-06-27 05:12:39"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 1294ms - IP: ::1","timestamp":"2026-06-27 05:12:39"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-06-27 05:12:39"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 194ms - IP: ::1","timestamp":"2026-06-27 05:12:39"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-27 05:12:48"}
+{"level":"info","message":"GET /api/results?page=1&limit=50&search= 200 - 381ms - IP: ::1","timestamp":"2026-06-27 05:12:49"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=true 200 - 161ms - IP: ::1","timestamp":"2026-06-27 05:12:51"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=slipGeneratedByCourse 200 - 163ms - IP: ::1","timestamp":"2026-06-27 05:12:51"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-06-27 05:13:00"}
+{"level":"info","message":"GET /api/results?page=1&limit=50&search= 200 - 522ms - IP: ::1","timestamp":"2026-06-27 05:13:00"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2ms - IP: ::1","timestamp":"2026-06-27 05:13:02"}
+{"level":"info","message":"GET /api/candidates/attendance 200 - 245ms - IP: ::1","timestamp":"2026-06-27 05:13:02"}
+{"level":"info","message":"GET /api/candidates/attendance 200 - 238ms - IP: ::1","timestamp":"2026-06-27 05:13:02"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-06-27 05:14:36"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 160ms - IP: ::1","timestamp":"2026-06-27 05:14:37"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 172ms - IP: ::1","timestamp":"2026-06-27 05:14:37"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 315ms - IP: ::1","timestamp":"2026-06-27 05:14:37"}

@@ -36,12 +36,34 @@ class PdfService {
         let photoBuffer = null;
         if (candidate.profileImage) {
           if (candidate.profileImage.startsWith('data:image')) {
+            // New format: base64 stored directly in MongoDB
             const base64Data = candidate.profileImage.replace(/^data:image\/\w+;base64,/, '');
             photoBuffer = Buffer.from(base64Data, 'base64');
           } else {
+            // Old format: file path stored in MongoDB — try disk first, then HTTP fallback
             const photoPath = path.join(__dirname, '../public', candidate.profileImage);
             if (fs.existsSync(photoPath)) {
               photoBuffer = fs.readFileSync(photoPath);
+            } else {
+              // Fallback: fetch from production server (for local dev against production DB)
+              try {
+                const PRODUCTION_URL = 'https://exambackend.neip.org.pk';
+                const imageUrl = `${PRODUCTION_URL}${candidate.profileImage}`;
+                const httpModule = require('https');
+                photoBuffer = await new Promise((resolve, reject) => {
+                  httpModule.get(imageUrl, (res) => {
+                    const chunks = [];
+                    res.on('data', (chunk) => chunks.push(chunk));
+                    res.on('end', () => {
+                      const buf = Buffer.concat(chunks);
+                      resolve(buf.length > 500 ? buf : null);
+                    });
+                    res.on('error', reject);
+                  }).on('error', reject);
+                });
+              } catch (e) {
+                photoBuffer = null;
+              }
             }
           }
         }
@@ -50,69 +72,84 @@ class PdfService {
         const logoPath = path.join(__dirname, '../public/logo.png');
         const hasLogo = fs.existsSync(logoPath);
 
-        // --- TOP BORDER ---
-        doc.rect(20, 10, 555, 6).fill(primaryColor);
+        // ══════════════════════════════════════════════════════
+        //  MODERN PROFESSIONAL HEADER
+        // ══════════════════════════════════════════════════════
 
-        // --- TOP SECTION (HEADER) ---
-        // Government logo and text
+        // Background fill for header area
+        doc.rect(20, 10, 555, 98).fill('#F4FAF7');
+
+        // Left vertical green accent strip
+        doc.rect(20, 10, 5, 98).fill(primaryColor);
+
+        // Logo
         if (hasLogo) {
-          doc.image(logoPath, 20, 22, { width: 55 });
+          doc.image(logoPath, 32, 18, { width: 62, height: 62 });
         }
+
+        // Org name block (right of logo)
+        const orgX = 105;
         doc.fillColor(primaryColor)
           .font('Helvetica-Bold')
-          .fontSize(16)
-          .text('HUNARMAND', 85, 32);
-        doc.text('PUNJAB', 85, 50);
+          .fontSize(20)
+          .text('HUNARMAND PUNJAB', orgX, 24, { characterSpacing: 0.5 });
 
-        // Vertical divider
-        doc.moveTo(175, 25).lineTo(175, 75).strokeColor('#CBD5E1').lineWidth(1.5).stroke();
+        // Thin green underline below title
+        doc.rect(orgX, 48, 250, 2).fill(primaryColor);
 
-        // Center branding text
-        doc.fillColor(primaryColor)
-          .font('Helvetica-Bold')
-          .fontSize(19)
-          .text('HUNARMAND PUNJAB PROGRAM', 190, 32, { align: 'left' });
+        doc.fillColor('#4A6741')
+          .font('Helvetica')
+          .fontSize(9)
+          .text('Building Skills for a Brighter Future', orgX, 54);
 
         doc.fillColor(lightText)
           .font('Helvetica')
-          .fontSize(9.5)
-          .text('Building Skills for a Brighter Future', 190, 54, { align: 'left' });
+          .fontSize(7.5)
+          .text('Skill Development Initiative | Punjab, Pakistan', orgX, 68);
 
-        // QR Code Box (Top Right)
-        doc.image(qrCodeBuffer, 485, 20, { width: 70 });
-        doc.roundedRect(485, 95, 70, 12, 3).fill(primaryColor);
+        // Vertical separator before QR
+        doc.moveTo(468, 14).lineTo(468, 104).strokeColor('#D1E8DA').lineWidth(1).stroke();
+
+        // QR code section
+        doc.roundedRect(474, 12, 94, 94, 6).fill('#FFFFFF');
+        doc.roundedRect(474, 12, 94, 94, 6).strokeColor('#D1E8DA').lineWidth(1).stroke();
+        doc.image(qrCodeBuffer, 478, 14, { width: 72, height: 72 });
+        doc.roundedRect(478, 90, 72, 13, 3).fill(primaryColor);
         doc.fillColor('#FFFFFF')
           .font('Helvetica-Bold')
-          .fontSize(5.5)
-          .text('Scan to Verify', 485, 98, { width: 70, align: 'center' });
+          .fontSize(6)
+          .text('Scan to Verify', 478, 94, { width: 72, align: 'center' });
 
-        // Divider
-        doc.moveTo(20, 115).lineTo(575, 115).strokeColor(borderColor).lineWidth(1).stroke();
+        // Subtle bottom border of header (thin)
+        doc.moveTo(20, 111).lineTo(575, 111).strokeColor('#D1E8DA').lineWidth(0.75).stroke();
 
-        // --- ADMIT CARD BADGE ---
+        // ══════════════════════════════════════════════════════
+        //  ADMIT CARD BADGE (below header)
+        // ══════════════════════════════════════════════════════
+
         // Side connector lines with circles
-        doc.moveTo(20, 137).lineTo(195, 137).strokeColor(primaryColor).lineWidth(1.2).stroke();
-        doc.circle(195, 137, 3).fill(primaryColor);
+        doc.moveTo(20, 130).lineTo(195, 130).strokeColor(primaryColor).lineWidth(1.2).stroke();
+        doc.circle(195, 130, 3).fill(primaryColor);
 
-        doc.moveTo(400, 137).lineTo(575, 137).strokeColor(primaryColor).lineWidth(1.2).stroke();
-        doc.circle(400, 137, 3).fill(primaryColor);
+        doc.moveTo(400, 130).lineTo(575, 130).strokeColor(primaryColor).lineWidth(1.2).stroke();
+        doc.circle(400, 130, 3).fill(primaryColor);
 
         // Badge pill
-        doc.roundedRect(205, 125, 185, 24, 12).fill(primaryColor);
-        
+        doc.roundedRect(200, 119, 195, 23, 11).fill(primaryColor);
+
         // ID card icon inside badge
         doc.save();
         doc.strokeColor('#FFFFFF').lineWidth(1.2);
-        doc.roundedRect(223, 131, 12, 10, 1.5).stroke();
-        doc.rect(225, 134, 2.5, 3).fill('#FFFFFF');
-        doc.moveTo(229, 134).lineTo(232, 134).stroke();
-        doc.moveTo(229, 137).lineTo(231, 137).stroke();
+        doc.roundedRect(215, 125, 12, 10, 1.5).stroke();
+        doc.rect(217, 128, 2.5, 3).fill('#FFFFFF');
+        doc.moveTo(221, 128).lineTo(224, 128).stroke();
+        doc.moveTo(221, 131).lineTo(223, 131).stroke();
         doc.restore();
 
         doc.fillColor('#FFFFFF')
           .font('Helvetica-Bold')
-          .fontSize(11)
-          .text('ADMIT CARD', 238, 131, { width: 140, align: 'left' });
+          .fontSize(10.5)
+          .text('ROLL NUMBER SLIP', 222, 125, { width: 170, align: 'center' });
 
         // Helper to draw vector icons
         const drawIcon = (name, x, y) => {
@@ -175,10 +212,19 @@ class PdfService {
           doc.fillColor(darkText).font('Helvetica-Bold').fontSize(8.5).text(value || 'N/A', x + 35, y + 16, { width: w - 45 });
         };
 
-        const testNo = `EXAM-2026-${candidate.rollNumber.split('-').pop() || '000000'}`;
-        const testDate = '20 June, 2026 (Saturday)';
+        const getCourseInitials = (courseName) => {
+          if (!courseName) return 'EXAM';
+          const words = courseName.replace(/[^a-zA-Z\s]/g, '').split(/\s+/).filter(w => w.length > 0);
+          if (words.length === 1) return words[0].substring(0, 3).toUpperCase();
+          return words.map(w => w[0].toUpperCase()).join('').substring(0, 4);
+        };
+        const courseInitials = getCourseInitials(candidate.course);
+        // Use stored sequential number (assigned at registration), padded to 5 digits
+        const seqNum = String(candidate.examSeqNumber || 1).padStart(5, '0');
+        const testNo = `HP-EXAM-${courseInitials}-${seqNum}`;
+        const testDate = '05 July, 2026 (Sunday)';
         const reportingTime = '08:30 AM';
-        const testCenter = candidate.preferredExamCity || 'Lahore';
+        const testCenter = 'CHEP Department, Punjab University, Lahore';
 
         // Column 1 (Left Details)
         drawGridItem('Test No', testNo, 20, 160, 210, 35, 'document');
@@ -190,8 +236,8 @@ class PdfService {
         // Column 2 (Middle Details)
         drawGridItem('Roll No', candidate.rollNumber, 245, 160, 210, 35, 'card');
         drawGridItem('Father Name', candidate.fatherName, 245, 203, 210, 35, 'user');
-        drawGridItem('Applied Course', candidate.course, 245, 246, 210, 78, 'graduation-cap');
-        drawGridItem('Test Date', testDate, 245, 332, 210, 35, 'calendar');
+        drawGridItem('Applied Course', candidate.course, 245, 246, 210, 35, 'graduation-cap');
+        drawGridItem('Test Date', testDate, 245, 289, 210, 35, 'calendar');
 
         // Column 3 (Photo Box on Right)
         doc.roundedRect(465, 160, 110, 135, 8).strokeColor(primaryColor).lineWidth(2).stroke();
@@ -257,8 +303,8 @@ class PdfService {
 
         // Left Col Instructions
         const leftInstructions = [
-          'Candidates must bring their original CNIC/B-Form and this Admit Card on the day of examination.',
-          'Without a valid Admit Card, entry to the examination center will not be allowed.',
+          'Candidates must bring their original CNIC/B-Form and this Roll No Slip on the day of examination.',
+          'Without a valid Roll No Slip, entry to the examination center will not be allowed.',
           'Candidates must reach the examination center at least 30 minutes before the commencement of the paper.',
           'Entry to the examination hall will be closed 15 minutes after the start of the paper.',
           'Mobile phones, smart watches, or any electronic devices are strictly prohibited inside the examination hall.'
@@ -276,7 +322,7 @@ class PdfService {
           'Use of unfair means will result in immediate cancellation of the paper and disciplinary action.',
           'Candidates must follow all instructions given by the invigilator/supervisory staff.',
           'Write your Roll Number clearly on the answer sheet in the provided space only.',
-          'Ensure that all details on this Admit Card are correct. In case of any issue, contact the helpdesk immediately.'
+          'Ensure that all details on this Roll No Slip are correct. In case of any issue, contact the helpdesk immediately.'
         ];
 
         bulletY = instY + 28;
@@ -297,36 +343,19 @@ class PdfService {
         doc.moveTo(29.5, footerY + 30).lineTo(31.5, footerY + 32).lineTo(35, footerY + 28).stroke();
         doc.restore();
 
-        doc.fillColor(darkText).font('Helvetica-Bold').fontSize(7.5).text('This is a computer generated Admit Card.', 47, footerY + 22);
+        doc.fillColor(darkText).font('Helvetica-Bold').fontSize(7.5).text('This is a computer generated Roll Number Slip.', 47, footerY + 22);
         doc.fillColor(lightText).font('Helvetica').fontSize(7).text('No signature is required.', 47, footerY + 32);
 
-        // Center Barcode
-        const drawBarcode = (x, y) => {
-          doc.save();
-          // Pseudo Code-128 barcode pattern
-          const pattern = [2, 1, 3, 1, 2, 2, 1, 3, 1, 2, 3, 1, 1, 2, 2, 3, 1, 1, 2, 1, 3, 2, 1, 2, 1, 3, 1, 2, 2, 1, 3, 1, 2, 3, 1, 1, 2, 2, 3, 1, 1];
-          let currentX = x;
-          doc.fillColor('#000000');
-          for (let i = 0; i < pattern.length; i++) {
-            const width = pattern[i];
-            if (i % 2 === 0) {
-              doc.rect(currentX, y, width, 22).fill();
-            }
-            currentX += width + 1;
-          }
-          doc.restore();
-        };
-
-        drawBarcode(242, footerY + 16);
-        doc.fillColor(lightText).font('Helvetica').fontSize(7.5).text(`${testNo}-${candidate.rollNumber.split('-').pop()}`, 220, footerY + 42, { align: 'center', width: 130 });
+        // Roll number in center (barcode removed)
+        doc.fillColor(darkText).font('Helvetica-Bold').fontSize(11).text(candidate.rollNumber, 200, footerY + 20, { align: 'center', width: 180 });
+        doc.fillColor(lightText).font('Helvetica').fontSize(7).text('Roll Number', 200, footerY + 36, { align: 'center', width: 180 });
 
         // Right Issued by Govt
         if (hasLogo) {
           doc.image(logoPath, 415, footerY + 16, { width: 28 });
         }
         doc.fillColor(darkText).font('Helvetica-Bold').fontSize(7.5).text('Issued by:', 450, footerY + 18);
-        doc.fillColor(lightText).font('Helvetica').fontSize(7).text('Hunarmand Punjab Program', 450, footerY + 27);
-        doc.fillColor(lightText).font('Helvetica').fontSize(6.5).text('Government of Punjab', 450, footerY + 36);
+        doc.fillColor(lightText).font('Helvetica').fontSize(7).text('Hunarmand Punjab', 450, footerY + 27);
 
         // Green footer contact strip
         const contactY = 580;

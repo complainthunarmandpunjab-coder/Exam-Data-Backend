@@ -16,9 +16,14 @@ const candidateSchema = new mongoose.Schema({
     course: { type: String, required: true },
     rollNumber: { type: String, required: true, trim: true },
     profileImage: { type: String, default: '' },
+    examSeqNumber: { type: Number, default: 0 },
     verificationStatus: { type: String, default: 'unverified' },
     status: { type: String, default: 'Pending' },
     qrSecureToken: { type: String, unique: true, sparse: true },
+    examAttended: { type: Boolean, default: false },
+    attendedAt: { type: Date, default: null },
+    slipGenerated: { type: Boolean, default: false },
+    slipGeneratedAt: { type: Date, default: null },
     isDeleted: { type: Boolean, default: false },
     deletedAt: { type: Date, default: null }
 }, { timestamps: true });
@@ -37,6 +42,7 @@ candidateSchema.index({ district: 1, tehsil: 1, institute: 1 });
 candidateSchema.index({ status: 1 });
 candidateSchema.index({ isDeleted: 1 });
 candidateSchema.index({ qrSecureToken: 1 });
+candidateSchema.index({ slipGenerated: 1 });
 candidateSchema.index({ createdAt: -1 });
 
 // Compound Index for compound searching & filtering performance
