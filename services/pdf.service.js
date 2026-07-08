@@ -74,7 +74,7 @@ class PdfService {
               try {
                 const httpModule = imageUrl.startsWith('https') ? require('https') : require('http');
                 photoBuffer = await new Promise((resolve, reject) => {
-                  httpModule.get(imageUrl, (res) => {
+                  const req = httpModule.get(imageUrl, (res) => {
                     if (res.statusCode >= 300) {
                       return reject(new Error(`Status ${res.statusCode}`));
                     }
@@ -85,7 +85,14 @@ class PdfService {
                       resolve(buf.length > 500 ? buf : null);
                     });
                     res.on('error', reject);
-                  }).on('error', reject);
+                  });
+                  
+                  req.on('error', reject);
+                  // 3-second timeout to prevent indefinite hang
+                  req.setTimeout(3000, () => {
+                    req.destroy();
+                    reject(new Error('Image fetch timeout'));
+                  });
                 });
               } catch (e) {
                 console.error('Error fetching candidate image:', e.message);
@@ -231,7 +238,14 @@ class PdfService {
           }
           
           doc.fillColor(lightText).font('Helvetica').fontSize(7.5).text(label, x + 35, y + 4);
-          doc.fillColor(darkText).font('Helvetica-Bold').fontSize(8.5).text(value || 'N/A', x + 35, y + 14, { width: w - 45 });
+          
+          // Responsive font size for long text
+          const valText = value || 'N/A';
+          let valFontSize = 8.5;
+          if (valText.length > 50) valFontSize = 6.5;
+          else if (valText.length > 25) valFontSize = 7.5;
+          
+          doc.fillColor(darkText).font('Helvetica-Bold').fontSize(valFontSize).text(valText, x + 35, y + 14, { width: w - 45 });
         };
 
         const getExamRoomDetails = (course, examSeqNum) => {
@@ -384,7 +398,7 @@ class PdfService {
         const seqNum = String(examSeqNum).padStart(5, '0');
         const testNo = `HP-EXAM-${courseInitials}-${seqNum}`;
         const testDate = '12 July, 2026 (Sunday)';
-        const testCenter = 'CHEP Department, Punjab University, Lahore';
+        const testCenter = 'CHEP Department, Punjab University, Canal Road New campus Gate No 2 Lahore';
         const { floor, room, examTime } = getExamRoomDetails(candidate.course, examSeqNum);
         const roomAssignment = `${floor}, ${room}`;
 
@@ -541,9 +555,9 @@ class PdfService {
         doc.fillColor('#FFFFFF').font('Helvetica').fontSize(7.5);
         
         // Globe icon, phone icon, mail icon text
-        doc.text('www.hunarmandpunjab.pk', 35, contactY + 6);
-        doc.text('03 111 133 053 (Mon-Sat: 9:00 AM - Coming soon)', 210, contactY + 6, { width: 200, align: 'center' });
-        doc.text('info@hunarmandpunjab.pk', 440, contactY + 6, { align: 'right', width: 120 });
+        doc.text('www.hunarmandpunjab.org.pk', 35, contactY + 6);
+        doc.text('03 111 133 053', 210, contactY + 6, { width: 200, align: 'center' });
+        doc.text('support@hunarmandpunjab.org.pk', 440, contactY + 6, { align: 'right', width: 120 });
 
         // --- SCISSORS CUTTING LINE ---
         const scissorY = 610;
@@ -585,8 +599,13 @@ class PdfService {
         let currentDetailY = detailsY;
         details.forEach(([lbl, val]) => {
           doc.fillColor(lightText).font('Helvetica-Bold').fontSize(7.5).text(lbl, 20, currentDetailY);
-          doc.fillColor(darkText).font('Helvetica').fontSize(7.5).text(`:  ${val}`, 90, currentDetailY, { width: 250 });
-          currentDetailY += 12;
+          
+          const valText = `:  ${val}`;
+          doc.fillColor(darkText).font('Helvetica').fontSize(7.5).text(valText, 90, currentDetailY, { width: 250 });
+          
+          // Calculate dynamic height to prevent overlap
+          const textHeight = doc.heightOfString(valText, { width: 250, font: 'Helvetica', fontSize: 7.5 });
+          currentDetailY += Math.max(12, textHeight + 4);
         });
 
         // Small Photo with blue border

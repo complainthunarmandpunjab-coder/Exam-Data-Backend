@@ -36,34 +36,33 @@ const app = express();
 // Express proxy trust configuration for rate limiter behind Nginx
 app.set('trust proxy', 1);
 
-// Set security HTTP headers
-app.use(helmet());
-
-// Enable CORS
+// Dynamic Allowed Origins
 const allowedOrigins = [
   'https://exams.hunarmandpunjab.org.pk',
-  'http://test.hunarmandpunjab.org.pk',
-  'https://test.hunarmandpunjab.org.pk',
-  'http://exams.hunarmandpunjab.org.pk',
-  'https://www.exams.hunarmandpunjab.org.pk',
-  'http://www.exams.hunarmandpunjab.org.pk',
-  'https://admin.hunarmandpunjab.org.pk',
-  'http://admin.hunarmandpunjab.org.pk',
-  'https://hunarmandpunjab.org.pk',
-  'http://hunarmandpunjab.org.pk',
-  'http://localhost:5173',
-  'http://localhost:5001'
+  'https://test.hunarmandpunjab.org.pk'
 ];
-app.use(cors({
+
+const corsOptions = {
   origin: function (origin, callback) {
-    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      return callback(new Error('CORS policy block'), false);
     }
+    return callback(null, true);
   },
-  credentials: true
-}));
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  // 🚨 'x-auth-token' ko yahan explicitly allow kar diya hai
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Origin', 'x-auth-token']
+};
+
+app.use(cors(corsOptions));
+
+// OPTIONS Pre-flight interceptor fix (Express 5 safe syntax)
+app.options(/.*/, cors(corsOptions));
+
+// 3. Is ke BAAD aap ka helmet ya dusre body-parsers hone chahiye
+app.use(helmet());
 
 // Parse request body parsing limit — increased to support base64 image in registration
 app.use(express.json({ limit: '5mb' }));
