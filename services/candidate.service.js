@@ -594,86 +594,73 @@ class CandidateService {
     const twelveMonthsAgo = new Date();
     twelveMonthsAgo.setMonth(twelveMonthsAgo.getMonth() - 12);
 
-    const [
-      totalCandidates,
-      verifiedCount,
-      pendingCount,
-      citiesBreakdown,
-      districtsBreakdown,
-      coursesBreakdown,
-      institutesBreakdown,
-      dailyRegistrations,
-      monthlyRegistrations
-    ] = await Promise.all([
-      candidateRepository.countDocuments({ isDeleted: { $ne: true } }),
-      candidateRepository.countDocuments({ verificationStatus: 'verified', isDeleted: { $ne: true } }),
-      candidateRepository.countDocuments({ status: 'Pending', isDeleted: { $ne: true } }),
+    const statsAggregation = await candidateRepository.model.aggregate([
+      { $match: { isDeleted: { $ne: true } } },
+      {
+        $facet: {
+          totalCandidates: [{ $count: "count" }],
+          verifiedCount: [
+            { $match: { verificationStatus: 'verified' } },
+            { $count: "count" }
+          ],
+          pendingCount: [
+            { $match: { status: 'Pending' } },
+            { $count: "count" }
+          ],
+          citiesBreakdown: [
+            { $group: { _id: '$preferredExamCity', count: { $sum: 1 } } },
+            { $sort: { count: -1 } }
+          ],
+          districtsBreakdown: [
+            { $group: { _id: '$district', count: { $sum: 1 } } },
+            { $sort: { count: -1 } },
+            { $limit: 10 }
+          ],
+          coursesBreakdown: [
+            { $group: { _id: '$course', count: { $sum: 1 } } },
+            { $sort: { count: -1 } }
+          ],
+          institutesBreakdown: [
+            { $group: { _id: '$institute', count: { $sum: 1 } } },
+            { $sort: { count: -1 } },
+            { $limit: 10 }
+          ],
+          dailyRegistrations: [
+            { $match: { createdAt: { $gte: thirtyDaysAgo } } },
+            {
+              $group: {
+                _id: { $dateToString: { format: '%Y-%m-%d', date: '$createdAt' } },
+                count: { $sum: 1 }
+              }
+            },
+            { $sort: { _id: 1 } }
+          ],
+          monthlyRegistrations: [
+            { $match: { createdAt: { $gte: twelveMonthsAgo } } },
+            {
+              $group: {
+                _id: { $dateToString: { format: '%Y-%m', date: '$createdAt' } },
+                count: { $sum: 1 }
+              }
+            },
+            { $sort: { _id: 1 } }
+          ]
+        }
+      }
+    ]).exec();
 
-      // Preferred Exam Cities Breakdown
-      candidateRepository.model.aggregate([
-        { $match: { isDeleted: { $ne: true } } },
-        { $group: { _id: '$preferredExamCity', count: { $sum: 1 } } },
-        { $sort: { count: -1 } }
-      ]).exec(),
-
-      // Districts Breakdown
-      candidateRepository.model.aggregate([
-        { $match: { isDeleted: { $ne: true } } },
-        { $group: { _id: '$district', count: { $sum: 1 } } },
-        { $sort: { count: -1 } },
-        { $limit: 10 }
-      ]).exec(),
-
-      // Courses Breakdown
-      candidateRepository.model.aggregate([
-        { $match: { isDeleted: { $ne: true } } },
-        { $group: { _id: '$course', count: { $sum: 1 } } },
-        { $sort: { count: -1 } }
-      ]).exec(),
-
-      // Institutes Breakdown
-      candidateRepository.model.aggregate([
-        { $match: { isDeleted: { $ne: true } } },
-        { $group: { _id: '$institute', count: { $sum: 1 } } },
-        { $sort: { count: -1 } },
-        { $limit: 10 }
-      ]).exec(),
-
-      // Daily Registrations (Last 30 Days)
-      candidateRepository.model.aggregate([
-        { $match: { createdAt: { $gte: thirtyDaysAgo }, isDeleted: { $ne: true } } },
-        {
-          $group: {
-            _id: { $dateToString: { format: '%Y-%m-%d', date: '$createdAt' } },
-            count: { $sum: 1 }
-          }
-        },
-        { $sort: { _id: 1 } }
-      ]).exec(),
-
-      // Monthly Registrations (Last 12 Months)
-      candidateRepository.model.aggregate([
-        { $match: { createdAt: { $gte: twelveMonthsAgo }, isDeleted: { $ne: true } } },
-        {
-          $group: {
-            _id: { $dateToString: { format: '%Y-%m', date: '$createdAt' } },
-            count: { $sum: 1 }
-          }
-        },
-        { $sort: { _id: 1 } }
-      ]).exec()
-    ]);
+    const facetResult = statsAggregation[0] || {};
 
     const stats = {
-      totalCandidates,
-      verifiedCount,
-      pendingCount,
-      citiesBreakdown,
-      districtsBreakdown,
-      coursesBreakdown,
-      institutesBreakdown,
-      dailyRegistrations,
-      monthlyRegistrations
+      totalCandidates: facetResult.totalCandidates?.[0]?.count || 0,
+      verifiedCount: facetResult.verifiedCount?.[0]?.count || 0,
+      pendingCount: facetResult.pendingCount?.[0]?.count || 0,
+      citiesBreakdown: facetResult.citiesBreakdown || [],
+      districtsBreakdown: facetResult.districtsBreakdown || [],
+      coursesBreakdown: facetResult.coursesBreakdown || [],
+      institutesBreakdown: facetResult.institutesBreakdown || [],
+      dailyRegistrations: facetResult.dailyRegistrations || [],
+      monthlyRegistrations: facetResult.monthlyRegistrations || []
     };
 
     // Cache the result for 10 minutes (600 seconds)

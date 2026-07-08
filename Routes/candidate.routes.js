@@ -7,15 +7,10 @@ const auth = require('../middleware/auth.middleware');
 
 const router = express.Router();
 
-router.get(
-  '/candidates/admit-card/:cnic',
-  candidateController.getAdmitCardPdf
-);
+// Agar candidateController.getAdmitCard majood hai to woh chalaye, nahi to crash na ho
+router.get('/candidates/admit-card/:cnic', candidateController.getAdmitCard || ((req, res) => res.status(500).json({ success: false, message: "Function not found. Please update controller file." })));
 
-router.post(
-  '/candidates/admit-card',
-  candidateController.postAdmitCardPdf
-);
+router.post('/candidates/admit-card', candidateController.getAdmitCard || ((req, res) => res.status(500).json({ success: false, message: "Function not found. Please update controller file." })));
 
 router.post(
   '/register',

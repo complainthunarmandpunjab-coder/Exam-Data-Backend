@@ -20,83 +20,11 @@ class CandidateController {
     }
   };
 
-  getAdmitCardPdf = async (req, res, next) => {
+  getAdmitCard = async (req, res, next) => {
     try {
-      const { cnic } = req.params;
-      // Strip any hyphens or spaces for clean lookup
-      const cleanCnic = cnic.replace(/[^0-9]/g, '');
-      const candidate = await candidateService.getCandidateByCnic(cleanCnic);
-      if (!candidate) {
-        return res.status(404).json({ 
-          success: false, 
-          message: 'No registration found for this CNIC. / اس شناختی کارڈ پر کوئی رجسٹریشن نہیں ملی۔' 
-        });
-      }
-
-      if (!candidate.profileImage) {
-        return res.status(400).json({ 
-          success: false, 
-          message: 'Profile image is required for your first slip generation. Please upload an image. / پہلی بار سلپ ڈاؤن لوڈ کرنے کے لیے تصویر اپلوڈ کرنا لازمی ہے۔' 
-        });
-      }
-
-      // Restrict slip generation to Lahore candidates only
-      const city = (candidate.preferredExamCity || '').toLowerCase().trim();
-      if (city !== 'lahore (nearest areas)') {
-        return res.status(403).json({
-          success: false,
-          message: 'Currently, exams are only scheduled for Lahore. Slips for other cities will be available later.'
-        });
-      }
-
-      // Assign sequence number at slip generation time (if not already assigned)
-      const updatedCandidate = await candidateService.assignExamSeqNumber(candidate._id, candidate.course);
-
-      const path = require('path');
-      const fs = require('fs');
-      const cacheDir = path.join(__dirname, '../exports_secure/slips');
+      const cnic = req.params.cnic || req.body.cnic;
+      const profileImage = req.body.profileImage;
       
-      if (!fs.existsSync(cacheDir)) {
-        fs.mkdirSync(cacheDir, { recursive: true });
-      }
-
-      const cachedPdfPath = path.join(cacheDir, `${cleanCnic}.pdf`);
-
-      res.setHeader('Content-Type', 'application/pdf');
-      res.setHeader('Content-Disposition', `attachment; filename=RollNumberSlip_${cleanCnic}.pdf`);
-
-      if (fs.existsSync(cachedPdfPath)) {
-        // Serve from disk cache
-        const pdfStream = fs.createReadStream(cachedPdfPath);
-        pdfStream.pipe(res);
-      } else {
-        // Generate new PDF
-        const pdfService = require('../services/pdf.service');
-        const frontendUrl = req.get('origin') || process.env.FRONTEND_URL || 'https://test.hunarmandpunjab.org.pk';
-        const pdfBuffer = await pdfService.generateAdmitCard(updatedCandidate || candidate, frontendUrl);
-        
-        // Save to disk cache asynchronously so we don't block the response
-        fs.writeFile(cachedPdfPath, pdfBuffer, (err) => {
-          if (err) console.error('Failed to cache PDF to disk', err);
-        });
-
-        res.send(pdfBuffer);
-      }
-      
-      // Mark as generated
-      try {
-        await candidateService.markSlipGenerated(candidate._id);
-      } catch (err) {
-        console.error('Failed to mark slip generated', err);
-      }
-    } catch (error) {
-      next(error);
-    }
-  };
-
-  postAdmitCardPdf = async (req, res, next) => {
-    try {
-      const { cnic, profileImage } = req.body;
       if (!cnic) {
         return res.status(400).json({ success: false, message: 'CNIC is required.' });
       }
@@ -124,12 +52,12 @@ class CandidateController {
       if (!candidate.profileImage && (!profileImage || !profileImage.startsWith('data:image'))) {
         return res.status(400).json({ 
           success: false, 
-          message: 'Profile image is required for your first slip generation. / پہلی بار سلپ ڈاؤن لوڈ کرنے کے لیے تصویر اپلوڈ کرنا لازمی ہے۔' 
+          message: 'Profile image is required for your first slip generation. Please upload an image. / پہلی بار سلپ ڈاؤن لوڈ کرنے کے لیے تصویر اپلوڈ کرنا لازمی ہے۔' 
         });
       }
 
-      // If image is provided, update the candidate record ONLY IF they don't already have one
-      if (!candidate.profileImage && profileImage && profileImage.startsWith('data:image')) {
+      // If POST request has a profileImage, update it
+      if (req.method === 'POST' && !candidate.profileImage && profileImage && profileImage.startsWith('data:image')) {
         candidate.profileImage = profileImage;
         const candidateRepository = require('../repositories/candidate.repository');
         await candidateRepository.updateOne(
@@ -153,8 +81,12 @@ class CandidateController {
       const fs = require('fs');
       const cacheDir = path.join(__dirname, '../exports_secure/slips');
       
-      if (!fs.existsSync(cacheDir)) {
-        fs.mkdirSync(cacheDir, { recursive: true });
+      try {
+        if (!fs.existsSync(cacheDir)) {
+          fs.mkdirSync(cacheDir, { recursive: true });
+        }
+      } catch (err) {
+        console.error('Failed to create cache directory:', err);
       }
 
       const cachedPdfPath = path.join(cacheDir, `${cleanCnic}.pdf`);
@@ -162,17 +94,24 @@ class CandidateController {
       res.setHeader('Content-Type', 'application/pdf');
       res.setHeader('Content-Disposition', `attachment; filename=RollNumberSlip_${cleanCnic}.pdf`);
 
-      if (fs.existsSync(cachedPdfPath)) {
-        // Serve from disk cache
-        const pdfStream = fs.createReadStream(cachedPdfPath);
-        pdfStream.pipe(res);
-      } else {
+      let servedFromCache = false;
+      try {
+        if (fs.existsSync(cachedPdfPath)) {
+          const pdfStream = fs.createReadStream(cachedPdfPath);
+          pdfStream.pipe(res);
+          servedFromCache = true;
+        }
+      } catch (err) {
+        console.error('Failed to read from cache:', err);
+      }
+
+      if (!servedFromCache) {
         // Generate new PDF
         const pdfService = require('../services/pdf.service');
         const frontendUrl = req.get('origin') || process.env.FRONTEND_URL || 'https://test.hunarmandpunjab.org.pk';
         const pdfBuffer = await pdfService.generateAdmitCard(updatedCandidate || candidate, frontendUrl);
         
-        // Save to disk cache asynchronously
+        // Save to disk cache asynchronously so we don't block the response
         fs.writeFile(cachedPdfPath, pdfBuffer, (err) => {
           if (err) console.error('Failed to cache PDF to disk', err);
         });
@@ -187,7 +126,8 @@ class CandidateController {
         console.error('Failed to mark slip generated', err);
       }
     } catch (error) {
-      next(error);
+      console.error('Slip Generation Error:', error);
+      res.status(500).json({ success: false, message: error.message, stack: error.stack });
     }
   };
 
