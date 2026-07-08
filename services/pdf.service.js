@@ -3,6 +3,11 @@ const QRCode = require('qrcode');
 const path = require('path');
 const fs = require('fs');
 
+let ArabicShaper;
+try {
+  ArabicShaper = require('arabic-persian-reshaper').ArabicShaper;
+} catch (e) {}
+
 class PdfService {
   async generateAdmitCard(candidate, hostUrl) {
     return new Promise(async (resolve, reject) => {
@@ -10,6 +15,12 @@ class PdfService {
         // Create A4 PDF (595.28 x 841.89 points)
         const doc = new PDFDocument({ size: 'A4', margin: 20 });
         const chunks = [];
+        
+        // Register custom signature font
+        const fontPath = path.join(__dirname, '../assets/GreatVibes-Regular.ttf');
+        if (fs.existsSync(fontPath)) {
+          doc.registerFont('SignatureFont', fontPath);
+        }
 
         doc.on('data', (chunk) => chunks.push(chunk));
         doc.on('end', () => resolve(Buffer.concat(chunks)));
@@ -40,18 +51,33 @@ class PdfService {
             const base64Data = candidate.profileImage.replace(/^data:image\/\w+;base64,/, '');
             photoBuffer = Buffer.from(base64Data, 'base64');
           } else {
-            // Old format: file path stored in MongoDB — try disk first, then HTTP fallback
-            const photoPath = path.join(__dirname, '../public', candidate.profileImage);
-            if (fs.existsSync(photoPath)) {
-              photoBuffer = fs.readFileSync(photoPath);
+            // Old format: file path or absolute URL
+            let imageUrl = candidate.profileImage;
+            
+            if (candidate.profileImage.startsWith('http')) {
+              // It's already a full URL, use it directly
+              imageUrl = candidate.profileImage;
             } else {
-              // Fallback: fetch from production server (for local dev against production DB)
-              try {
+              // Try disk first for relative paths
+              const photoPath = path.join(__dirname, '../public', candidate.profileImage);
+              if (fs.existsSync(photoPath)) {
+                photoBuffer = fs.readFileSync(photoPath);
+              } else {
+                // Construct fallback URL
                 const PRODUCTION_URL = 'https://exambackend.neip.org.pk';
-                const imageUrl = `${PRODUCTION_URL}${candidate.profileImage}`;
-                const httpModule = require('https');
+                imageUrl = `${PRODUCTION_URL}${candidate.profileImage.startsWith('/') ? '' : '/'}${candidate.profileImage}`;
+              }
+            }
+
+            if (!photoBuffer) {
+              // Fetch via HTTP/HTTPS
+              try {
+                const httpModule = imageUrl.startsWith('https') ? require('https') : require('http');
                 photoBuffer = await new Promise((resolve, reject) => {
                   httpModule.get(imageUrl, (res) => {
+                    if (res.statusCode >= 300) {
+                      return reject(new Error(`Status ${res.statusCode}`));
+                    }
                     const chunks = [];
                     res.on('data', (chunk) => chunks.push(chunk));
                     res.on('end', () => {
@@ -62,6 +88,7 @@ class PdfService {
                   }).on('error', reject);
                 });
               } catch (e) {
+                console.error('Error fetching candidate image:', e.message);
                 photoBuffer = null;
               }
             }
@@ -101,11 +128,6 @@ class PdfService {
           .font('Helvetica')
           .fontSize(9)
           .text('Building Skills for a Brighter Future', orgX, 54);
-
-        doc.fillColor(lightText)
-          .font('Helvetica')
-          .fontSize(7.5)
-          .text('Skill Development Initiative | Punjab, Pakistan', orgX, 68);
 
         // Vertical separator before QR
         doc.moveTo(468, 14).lineTo(468, 104).strokeColor('#D1E8DA').lineWidth(1).stroke();
@@ -208,8 +230,146 @@ class PdfService {
             drawIcon(iconName, x + 8, y + (h - 18) / 2);
           }
           
-          doc.fillColor(lightText).font('Helvetica').fontSize(7.5).text(label, x + 35, y + 6);
-          doc.fillColor(darkText).font('Helvetica-Bold').fontSize(8.5).text(value || 'N/A', x + 35, y + 16, { width: w - 45 });
+          doc.fillColor(lightText).font('Helvetica').fontSize(7.5).text(label, x + 35, y + 4);
+          doc.fillColor(darkText).font('Helvetica-Bold').fontSize(8.5).text(value || 'N/A', x + 35, y + 14, { width: w - 45 });
+        };
+
+        const getExamRoomDetails = (course, examSeqNum) => {
+          let floor = 'TBD';
+          let room = 'TBD';
+          let examTime = '10:00 AM – 11:15 AM'; // default
+          const rollNum = parseInt(examSeqNum, 10);
+          
+          if (!rollNum || isNaN(rollNum)) return { floor, room, examTime };
+
+          const c = (course || '').trim().toUpperCase();
+
+          // SLOT 1
+          if (c === 'ARTIFICIAL INTELLIGENCE (AI)') {
+            examTime = '10:00 AM – 11:15 AM';
+            if (rollNum >= 1 && rollNum <= 75) { floor = 'Ground Floor'; room = 'Room 107'; }
+            else if (rollNum >= 76 && rollNum <= 120) { floor = 'Ground Floor'; room = 'Room 109'; }
+            else if (rollNum >= 121 && rollNum <= 165) { floor = 'Ground Floor'; room = 'Room 110'; }
+            else if (rollNum >= 166 && rollNum <= 200) { floor = 'Ground Floor'; room = 'Room 111'; }
+            else if (rollNum >= 201 && rollNum <= 249) { floor = 'First Floor'; room = 'Library'; }
+          } else if (c === 'FOREX TRADING') {
+            examTime = '10:00 AM – 11:15 AM';
+            if (rollNum >= 1 && rollNum <= 40) { floor = 'First Floor'; room = 'Room 206'; }
+            else if (rollNum >= 41 && rollNum <= 77) { floor = 'Second Floor'; room = 'Room 317'; }
+          } else if (c === 'UI/UX DESIGNING FOR WEB & APP') {
+            examTime = '10:00 AM – 11:15 AM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 28) room = 'Room 207';
+            else if (rollNum >= 29 && rollNum <= 56) room = 'Room 208';
+          } else if (c === 'SEARCH ENGINE OPTIMIZATION (SEO)') {
+            examTime = '10:00 AM – 11:15 AM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 40) room = 'Room 211';
+          } else if (c === 'WORDPRESS WEBSITE DEVELOPMENT') {
+            examTime = '10:00 AM – 11:15 AM';
+            if (rollNum >= 1 && rollNum <= 13) { floor = 'First Floor'; room = 'Room 214'; }
+            else if (rollNum >= 14 && rollNum <= 53) { floor = 'Second Floor'; room = 'Room 314'; }
+          } else if (c === 'REACT & NODE.JS FULL STACK DEVELOPMENT') {
+            examTime = '10:00 AM – 11:15 AM';
+            floor = 'Second Floor';
+            if (rollNum >= 1 && rollNum <= 52) room = 'Room 315';
+          } else if (c === 'PENETRATION TESTING WEB HACKING') {
+            examTime = '10:00 AM – 11:15 AM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 24) room = 'Library';
+          }
+          // SLOT 2
+          else if (c === 'FULL STACK DIGITAL MARKETING & AI') {
+            examTime = '12:00 PM – 1:15 PM';
+            if (rollNum >= 1 && rollNum <= 75) { floor = 'Ground Floor'; room = 'Room 107'; }
+            else if (rollNum >= 76 && rollNum <= 120) { floor = 'Ground Floor'; room = 'Room 109'; }
+            else if (rollNum >= 121 && rollNum <= 165) { floor = 'Ground Floor'; room = 'Room 110'; }
+            else if (rollNum >= 166 && rollNum <= 200) { floor = 'Ground Floor'; room = 'Room 111'; }
+            else if (rollNum >= 201 && rollNum <= 249) { floor = 'First Floor'; room = 'Library'; }
+          } else if (c === 'TEXTILE DESIGNING') {
+            examTime = '12:00 PM – 1:15 PM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 16) room = 'Room 207';
+          } else if (c === 'ADVANCED GOOGLE ADS') {
+            examTime = '12:00 PM – 1:15 PM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 14) room = 'Room 207';
+          } else if (c === 'MERN STACK WEB DEVELOPMENT') {
+            examTime = '12:00 PM – 1:15 PM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 30) room = 'Room 208';
+            else if (rollNum >= 31 && rollNum <= 66) room = 'Room 211';
+          } else if (c === 'DIGITAL EMBROIDERY') {
+            examTime = '12:00 PM – 1:15 PM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 7) room = 'Room 214';
+          } else if (c === 'FLUTTER APP DEVELOPMENT' || c === 'CROSS PLATFORM FLUTTER APP DEVELOPMENT') {
+            examTime = '12:00 PM – 1:15 PM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 18) room = 'Library';
+          } else if (c === 'PHP LARAVEL WEB DEVELOPMENT') {
+            examTime = '12:00 PM – 1:15 PM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 8) room = 'Library';
+          } else if (c === 'NATIONAL CYBER SECURITY') {
+            examTime = '12:00 PM – 1:15 PM';
+            floor = 'Second Floor';
+            if (rollNum >= 1 && rollNum <= 50) room = 'Room 314';
+            else if (rollNum >= 51 && rollNum <= 105) room = 'Room 315';
+            else if (rollNum >= 106 && rollNum <= 141) room = 'Room 317';
+          }
+          // SLOT 3
+          else if (c === 'IELTS PREPARATION') {
+            examTime = '2:00 PM – 3:15 PM';
+            floor = 'Ground Floor';
+            if (rollNum >= 1 && rollNum <= 75) room = 'Room 107';
+            else if (rollNum >= 76 && rollNum <= 120) room = 'Room 109';
+            else if (rollNum >= 121 && rollNum <= 165) room = 'Room 110';
+            else if (rollNum >= 166 && rollNum <= 192) room = 'Room 111';
+          } else if (c === 'FREELANCING PROGRAM') {
+            examTime = '2:00 PM – 3:15 PM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 40) room = 'Room 206';
+            else if (rollNum >= 41 && rollNum <= 67) room = 'Room 207';
+            else if (rollNum >= 68 && rollNum <= 112) room = 'Room 211';
+          } else if (c === 'PYTHON PROGRAMMING FOR EVERYONE') {
+            examTime = '2:00 PM – 3:15 PM';
+            if (rollNum >= 1 && rollNum <= 75) { floor = 'First Floor'; room = 'Library'; }
+            else if (rollNum >= 76 && rollNum <= 124) { floor = 'Second Floor'; room = 'Room 314'; }
+          } else if (c === 'YOUTUBE MONETIZATION') {
+            examTime = '2:00 PM – 3:15 PM';
+            floor = 'Second Floor';
+            if (rollNum >= 1 && rollNum <= 40) room = 'Room 315';
+            else if (rollNum >= 41 && rollNum <= 72) room = 'Room 317';
+          }
+          // SLOT 4
+          else if (c === 'MACHINE LEARNING & DATA SCIENCE') {
+            examTime = '4:00 PM – 5:15 PM';
+            if (rollNum >= 1 && rollNum <= 65) { floor = 'Ground Floor'; room = 'Room 107'; }
+            else if (rollNum >= 66 && rollNum <= 102) { floor = 'First Floor'; room = 'Room 211'; }
+          } else if (c === 'SHOPIFY & DARAZ BUSINESS') {
+            examTime = '4:00 PM – 5:15 PM';
+            if (rollNum >= 1 && rollNum <= 40) { floor = 'Ground Floor'; room = 'Room 109'; }
+            else if (rollNum >= 41 && rollNum <= 80) { floor = 'Ground Floor'; room = 'Room 110'; }
+            else if (rollNum >= 81 && rollNum <= 98) { floor = 'First Floor'; room = 'Room 210'; }
+          } else if (c === 'VIDEO EDITING & ANIMATION') {
+            examTime = '4:00 PM – 5:15 PM';
+            if (rollNum >= 1 && rollNum <= 24) { floor = 'Ground Floor'; room = 'Room 111'; }
+            else if (rollNum >= 25 && rollNum <= 54) { floor = 'First Floor'; room = 'Room 206'; }
+            else if (rollNum >= 55 && rollNum <= 84) { floor = 'First Floor'; room = 'Room 208'; }
+          } else if (c === 'AMAZON VIRTUAL ASSISTANT') {
+            examTime = '4:00 PM – 5:15 PM';
+            floor = 'First Floor';
+            if (rollNum >= 1 && rollNum <= 21) room = 'Room 207';
+            else if (rollNum >= 22 && rollNum <= 86) room = 'Library';
+          } else if (c === 'FULL STACK GRAPHIC DESIGNING & AI') {
+            examTime = '4:00 PM – 5:15 PM';
+            floor = 'Second Floor';
+            if (rollNum >= 1 && rollNum <= 50) room = 'Room 314';
+            else if (rollNum >= 51 && rollNum <= 100) room = 'Room 315';
+          }
+          
+          return { floor, room, examTime };
         };
 
         const getCourseInitials = (courseName) => {
@@ -220,24 +380,36 @@ class PdfService {
         };
         const courseInitials = getCourseInitials(candidate.course);
         // Use stored sequential number (assigned at registration), padded to 5 digits
-        const seqNum = String(candidate.examSeqNumber || 1).padStart(5, '0');
+        const examSeqNum = candidate.examSeqNumber || 1;
+        const seqNum = String(examSeqNum).padStart(5, '0');
         const testNo = `HP-EXAM-${courseInitials}-${seqNum}`;
-        const testDate = '05 July, 2026 (Sunday)';
-        const reportingTime = '08:30 AM';
+        const testDate = '12 July, 2026 (Sunday)';
         const testCenter = 'CHEP Department, Punjab University, Lahore';
+        const { floor, room, examTime } = getExamRoomDetails(candidate.course, examSeqNum);
+        const roomAssignment = `${floor}, ${room}`;
+
+        // Grid parameters (5 rows)
+        const rowHeight = 35;
+        const rowGap = 8;
+        const y0 = 160;
+        const y1 = y0 + rowHeight + rowGap; // 203
+        const y2 = y1 + rowHeight + rowGap; // 246
+        const y3 = y2 + rowHeight + rowGap; // 289
+        const y4 = y3 + rowHeight + rowGap; // 332
 
         // Column 1 (Left Details)
-        drawGridItem('Test No', testNo, 20, 160, 210, 35, 'document');
-        drawGridItem('Candidate Name', candidate.fullName, 20, 203, 210, 35, 'user');
-        drawGridItem('CNIC', candidate.cnic, 20, 246, 210, 35, 'card');
-        drawGridItem('Test Center', testCenter, 20, 289, 210, 35, 'map-pin');
-        drawGridItem('Reporting Time', reportingTime, 20, 332, 210, 35, 'clock');
+        drawGridItem('Test No', testNo, 20, y0, 210, rowHeight, 'document');
+        drawGridItem('Candidate Name', candidate.fullName, 20, y1, 210, rowHeight, 'user');
+        drawGridItem('CNIC', candidate.cnic, 20, y2, 210, rowHeight, 'card');
+        drawGridItem('Test Center', testCenter, 20, y3, 210, rowHeight, 'map-pin');
+        drawGridItem('Room Assignment', roomAssignment, 20, y4, 210, rowHeight, 'map-pin');
 
         // Column 2 (Middle Details)
-        drawGridItem('Roll No', candidate.rollNumber, 245, 160, 210, 35, 'card');
-        drawGridItem('Father Name', candidate.fatherName, 245, 203, 210, 35, 'user');
-        drawGridItem('Applied Course', candidate.course, 245, 246, 210, 35, 'graduation-cap');
-        drawGridItem('Test Date', testDate, 245, 289, 210, 35, 'calendar');
+        drawGridItem('Roll No', candidate.rollNumber, 245, y0, 210, rowHeight, 'card');
+        drawGridItem('Father Name', candidate.fatherName, 245, y1, 210, rowHeight, 'user');
+        drawGridItem('Applied Course', candidate.course, 245, y2, 210, rowHeight, 'graduation-cap');
+        drawGridItem('Test Date', testDate, 245, y3, 210, rowHeight, 'calendar');
+        drawGridItem('Exam Time', examTime, 245, y4, 210, rowHeight, 'clock');
 
         // Column 3 (Photo Box on Right)
         doc.roundedRect(465, 160, 110, 135, 8).strokeColor(primaryColor).lineWidth(2).stroke();
@@ -281,10 +453,7 @@ class PdfService {
         doc.moveTo(29.5, instY + 11).lineTo(31.5, instY + 13).lineTo(35, instY + 9).stroke();
         doc.restore();
 
-        doc.fillColor(primaryColor)
-          .font('Helvetica-Bold')
-          .fontSize(9)
-          .text('IMPORTANT INSTRUCTIONS', 45, instY + 7);
+        doc.fillColor(primaryColor).font('Helvetica-Bold').fontSize(9).text('IMPORTANT INSTRUCTIONS', 45, instY + 7);
 
         // Instruction bullet points helper
         const drawInstructionBullet = (text, x, y, width) => {
@@ -307,13 +476,14 @@ class PdfService {
           'Without a valid Roll No Slip, entry to the examination center will not be allowed.',
           'Candidates must reach the examination center at least 30 minutes before the commencement of the paper.',
           'Entry to the examination hall will be closed 15 minutes after the start of the paper.',
-          'Mobile phones, smart watches, or any electronic devices are strictly prohibited inside the examination hall.'
+          'Mobile phones, smart watches, and all other electronic devices must remain strictly powered off within the examination area.',
+          'Candidates must bring a blue pen and a clipboard for the examination.'
         ];
         
         let bulletY = instY + 28;
         leftInstructions.forEach((text) => {
           drawInstructionBullet(text, 30, bulletY, 255);
-          bulletY += 18;
+          bulletY += 16;
         });
 
         // Right Col Instructions
@@ -328,7 +498,7 @@ class PdfService {
         bulletY = instY + 28;
         rightInstructions.forEach((text) => {
           drawInstructionBullet(text, 300, bulletY, 260);
-          bulletY += 18;
+          bulletY += 16;
         });
 
         // --- BARCODE / FOOTER SECTION ---
@@ -344,7 +514,7 @@ class PdfService {
         doc.restore();
 
         doc.fillColor(darkText).font('Helvetica-Bold').fontSize(7.5).text('This is a computer generated Roll Number Slip.', 47, footerY + 22);
-        doc.fillColor(lightText).font('Helvetica').fontSize(7).text('No signature is required.', 47, footerY + 32);
+        // Removed "No signature is required." text as requested
 
         // Roll number in center (barcode removed)
         doc.fillColor(darkText).font('Helvetica-Bold').fontSize(11).text(candidate.rollNumber, 200, footerY + 20, { align: 'center', width: 180 });
@@ -354,8 +524,16 @@ class PdfService {
         if (hasLogo) {
           doc.image(logoPath, 415, footerY + 16, { width: 28 });
         }
-        doc.fillColor(darkText).font('Helvetica-Bold').fontSize(7.5).text('Issued by:', 450, footerY + 18);
-        doc.fillColor(lightText).font('Helvetica').fontSize(7).text('Hunarmand Punjab', 450, footerY + 27);
+        doc.fillColor(darkText).font('Helvetica-Bold').fontSize(7.5).text('Issued by:', 450, footerY + 14);
+        doc.fillColor(lightText).font('Helvetica').fontSize(7).text('Hunarmand Punjab', 450, footerY + 23);
+        
+        // Signature
+        try {
+          doc.fillColor('#10b981').font('SignatureFont').fontSize(22).text('Husnain', 448, footerY + 22);
+        } catch (err) {
+          doc.fillColor('#10b981').font('Times-Italic').fontSize(16).text('Husnain', 448, footerY + 30);
+        }
+        doc.fillColor(lightText).font('Helvetica-Bold').fontSize(6).text('Exam Controller', 450, footerY + 49);
 
         // Green footer contact strip
         const contactY = 580;
@@ -364,7 +542,7 @@ class PdfService {
         
         // Globe icon, phone icon, mail icon text
         doc.text('www.hunarmandpunjab.pk', 35, contactY + 6);
-        doc.text('042-111-486-486 (Mon-Sat: 9:00 AM - 6:00 PM)', 210, contactY + 6, { width: 200, align: 'center' });
+        doc.text('03 111 133 053 (Mon-Sat: 9:00 AM - Coming soon)', 210, contactY + 6, { width: 200, align: 'center' });
         doc.text('info@hunarmandpunjab.pk', 440, contactY + 6, { align: 'right', width: 120 });
 
         // --- SCISSORS CUTTING LINE ---
@@ -399,15 +577,16 @@ class PdfService {
           ['Test No', testNo],
           ['Applied Course', candidate.course],
           ['Test Center', testCenter],
+          ['Room Assign', roomAssignment],
           ['Test Date', testDate],
-          ['Reporting Time', reportingTime]
+          ['Exam Time', examTime]
         ];
 
         let currentDetailY = detailsY;
         details.forEach(([lbl, val]) => {
           doc.fillColor(lightText).font('Helvetica-Bold').fontSize(7.5).text(lbl, 20, currentDetailY);
-          doc.fillColor(darkText).font('Helvetica').fontSize(7.5).text(`:  ${val}`, 110, currentDetailY, { width: 230 });
-          currentDetailY += 13;
+          doc.fillColor(darkText).font('Helvetica').fontSize(7.5).text(`:  ${val}`, 90, currentDetailY, { width: 250 });
+          currentDetailY += 12;
         });
 
         // Small Photo with blue border

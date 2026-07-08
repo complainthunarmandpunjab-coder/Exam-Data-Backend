@@ -49,26 +49,38 @@ class ExportService {
       const workbook = new ExcelJS.stream.xlsx.WorkbookWriter(options);
       const worksheet = workbook.addWorksheet('Enrolled Candidates');
 
-      // Define Columns with headers
-      worksheet.columns = [
-        { header: 'Full Name', key: 'fullName', width: 25 },
-        { header: 'Father Name', key: 'fatherName', width: 25 },
-        { header: 'CNIC', key: 'cnic', width: 18 },
-        { header: 'Email', key: 'email', width: 25 },
-        { header: 'Contact', key: 'contactNumber', width: 15 },
-        { header: 'Gender', key: 'gender', width: 10 },
-        { header: 'City', key: 'city', width: 15 },
-        { header: 'Preferred Exam City', key: 'preferredExamCity', width: 20 },
-        { header: 'District', key: 'district', width: 20 },
-        { header: 'Tehsil', key: 'tehsil', width: 20 },
-        { header: 'Institute', key: 'institute', width: 30 },
-        { header: 'Batch', key: 'batch', width: 12 },
-        { header: 'Course', key: 'course', width: 20 },
-        { header: 'Roll Number', key: 'rollNumber', width: 15 },
-        { header: 'Verification Status', key: 'verificationStatus', width: 15 },
-        { header: 'Status', key: 'status', width: 12 },
-        { header: 'Created At', key: 'createdAt', width: 22 }
-      ];
+      // Define Columns with headers based on exportType
+      if (job.filters && job.filters.exportType === 'Only Phone Numbers') {
+        worksheet.columns = [
+          { header: 'Full Name', key: 'fullName', width: 25 },
+          { header: 'Contact', key: 'contactNumber', width: 15 }
+        ];
+      } else if (job.filters && job.filters.exportType === 'Only Emails') {
+        worksheet.columns = [
+          { header: 'Full Name', key: 'fullName', width: 25 },
+          { header: 'Email', key: 'email', width: 25 }
+        ];
+      } else {
+        worksheet.columns = [
+          { header: 'Full Name', key: 'fullName', width: 25 },
+          { header: 'Father Name', key: 'fatherName', width: 25 },
+          { header: 'CNIC', key: 'cnic', width: 18 },
+          { header: 'Email', key: 'email', width: 25 },
+          { header: 'Contact', key: 'contactNumber', width: 15 },
+          { header: 'Gender', key: 'gender', width: 10 },
+          { header: 'City', key: 'city', width: 15 },
+          { header: 'Preferred Exam City', key: 'preferredExamCity', width: 20 },
+          { header: 'District', key: 'district', width: 20 },
+          { header: 'Tehsil', key: 'tehsil', width: 20 },
+          { header: 'Institute', key: 'institute', width: 30 },
+          { header: 'Batch', key: 'batch', width: 12 },
+          { header: 'Course', key: 'course', width: 20 },
+          { header: 'Roll Number', key: 'rollNumber', width: 15 },
+          { header: 'Verification Status', key: 'verificationStatus', width: 15 },
+          { header: 'Status', key: 'status', width: 12 },
+          { header: 'Created At', key: 'createdAt', width: 22 }
+        ];
+      }
 
       // Format Header style to feel premium
       worksheet.getRow(1).font = { name: 'Arial', family: 4, size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
@@ -86,6 +98,8 @@ class ExportService {
 
       if (filters.gender && filters.gender !== 'All') query.gender = { $regex: `^${escapeRegex(filters.gender)}$`, $options: 'i' };
       if (filters.city && filters.city !== 'All') query.city = { $regex: `^${escapeRegex(filters.city)}$`, $options: 'i' };
+      if (filters.email && filters.email.trim() !== '') query.email = { $regex: escapeRegex(filters.email.trim()), $options: 'i' };
+      if (filters.phone && filters.phone.trim() !== '') query.contactNumber = { $regex: escapeRegex(filters.phone.trim()), $options: 'i' };
       if (filters.preferredExamCity && filters.preferredExamCity !== 'All') query.preferredExamCity = { $regex: `^${escapeRegex(filters.preferredExamCity)}$`, $options: 'i' };
       if (filters.district && filters.district !== 'All') query.district = { $regex: `^${escapeRegex(filters.district)}$`, $options: 'i' };
       if (filters.tehsil && filters.tehsil !== 'All') query.tehsil = { $regex: `^${escapeRegex(filters.tehsil)}$`, $options: 'i' };

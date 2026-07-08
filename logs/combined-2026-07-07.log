@@ -1,0 +1,287 @@
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 499ms - IP: ::1","timestamp":"2026-07-07 00:06:37"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-07-07 00:06:39"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 123ms - IP: ::1","timestamp":"2026-07-07 00:06:39"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 582ms - IP: ::1","timestamp":"2026-07-07 00:06:39"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 763ms - IP: ::1","timestamp":"2026-07-07 00:06:39"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 1ms - IP: ::1","timestamp":"2026-07-07 00:07:11"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 231ms - IP: ::1","timestamp":"2026-07-07 00:07:11"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 484ms - IP: ::1","timestamp":"2026-07-07 00:07:12"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 629ms - IP: ::1","timestamp":"2026-07-07 00:07:12"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-07-07 00:07:19"}
+{"level":"info","message":"GET /api/results?page=1&limit=50&search= 200 - 242ms - IP: ::1","timestamp":"2026-07-07 00:07:20"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 3ms - IP: ::1","timestamp":"2026-07-07 00:07:20"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=true 200 - 121ms - IP: ::1","timestamp":"2026-07-07 00:07:22"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=slipGeneratedByCourse 200 - 113ms - IP: ::1","timestamp":"2026-07-07 00:07:22"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 00:08:05"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 00:08:07"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 00:08:07"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 00:08:07"}
+{"level":"info","message":"POST /api/candidates/admit-card 403 - 177ms - IP: ::1","timestamp":"2026-07-07 00:11:02"}
+{"level":"info","message":"POST /api/candidates/admit-card 200 - 1036ms - IP: ::1","timestamp":"2026-07-07 00:11:30"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 03:37:43"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 03:37:45"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-07-07 03:37:45"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 03:37:45"}
+{"level":"info","message":"GET /api/results/public/3530178813100 200 - 333ms - IP: ::1","timestamp":"2026-07-07 03:43:57"}
+{"level":"info","message":"GET /api/results/public/6a45fbf36af19610a90fc8bc/pdf 200 - 448ms - IP: ::1","timestamp":"2026-07-07 03:44:04"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 03:54:03"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 03:54:05"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 03:54:05"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 03:54:05"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 04:05:20"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:05:22"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 04:05:22"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 04:05:22"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:08:02"}
+{"level":"info","message":"GET /api/candidates/admit-card/3540404531065 200 - 1110ms - IP: ::1","timestamp":"2026-07-07 04:14:49"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 04:21:21"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:21:22"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 04:21:22"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 04:21:22"}
+{"level":"info","message":"GET /api/candidates/verify-qr?token=bb9e0dd7e8d6685241e40f2c86cc247c 200 - 275ms - IP: ::1","timestamp":"2026-07-07 04:25:01"}
+{"level":"info","message":"GET /api/candidates/verify-qr?token=bb9e0dd7e8d6685241e40f2c86cc247c 200 - 118ms - IP: ::1","timestamp":"2026-07-07 04:25:01"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 04:33:52"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:33:56"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 04:33:57"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 04:33:57"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 04:35:14"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:35:17"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 04:35:17"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 04:35:17"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 04:36:01"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:36:02"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-07-07 04:36:02"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 04:36:02"}
+{"level":"info","message":"GET /api/candidates/admit-card/3540404531065 200 - 294ms - IP: ::1","timestamp":"2026-07-07 04:36:24"}
+{"level":"info","message":"GET /api/candidates/admit-card/35201-2312515-5 200 - 1122ms - IP: ::1","timestamp":"2026-07-07 04:36:45"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 04:41:33"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:41:35"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 04:41:35"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 04:41:35"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 04:44:41"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:44:42"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-07-07 04:44:42"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 04:44:42"}
+{"level":"info","message":"GET /api/candidates/admit-card/3630236609731 403 - 259ms - IP: ::1","timestamp":"2026-07-07 04:45:27"}
+{"level":"info","message":"GET /api/candidates/admit-card/3530233976825 200 - 1681ms - IP: ::1","timestamp":"2026-07-07 04:45:42"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 04:50:46"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:50:47"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 04:50:47"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 04:50:47"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 04:55:52"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 04:55:54"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-00.7dbsn.mongodb.net","timestamp":"2026-07-07 04:55:54"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 04:55:54"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 05:04:51"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 05:04:52"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-07-07 05:04:52"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 05:04:52"}
+{"level":"info","message":"GET /api/candidates/admit-card/3520211207561 400 - 203ms - IP: ::1","timestamp":"2026-07-07 05:05:58"}
+{"level":"info","message":"GET /api/candidates/admit-card/3520211207561 400 - 127ms - IP: ::1","timestamp":"2026-07-07 05:07:47"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 368ms - IP: ::1","timestamp":"2026-07-07 05:37:11"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1502ms - IP: ::1","timestamp":"2026-07-07 05:37:11"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1599ms - IP: ::1","timestamp":"2026-07-07 05:37:12"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 559ms - IP: ::1","timestamp":"2026-07-07 05:37:15"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 6ms - IP: ::1","timestamp":"2026-07-07 05:37:37"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-07-07 05:38:22"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 116ms - IP: ::1","timestamp":"2026-07-07 05:38:22"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 498ms - IP: ::1","timestamp":"2026-07-07 05:38:22"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 3ms - IP: ::1","timestamp":"2026-07-07 05:42:05"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 259ms - IP: ::1","timestamp":"2026-07-07 05:42:06"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 519ms - IP: ::1","timestamp":"2026-07-07 05:42:06"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 990ms - IP: ::1","timestamp":"2026-07-07 05:42:07"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-07-07 05:42:37"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 262ms - IP: ::1","timestamp":"2026-07-07 05:42:37"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 701ms - IP: ::1","timestamp":"2026-07-07 05:42:37"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 05:43:34"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-07-07 05:43:35"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 05:43:35"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 05:43:35"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 389ms - IP: ::1","timestamp":"2026-07-07 05:43:43"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 558ms - IP: ::1","timestamp":"2026-07-07 05:43:43"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 796ms - IP: ::1","timestamp":"2026-07-07 05:43:43"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-07-07 05:47:01"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 118ms - IP: ::1","timestamp":"2026-07-07 05:47:01"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 497ms - IP: ::1","timestamp":"2026-07-07 05:47:02"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 05:47:29"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 05:47:30"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-07-07 05:47:30"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 05:47:30"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 332ms - IP: ::1","timestamp":"2026-07-07 05:47:44"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 871ms - IP: ::1","timestamp":"2026-07-07 05:47:44"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1189ms - IP: ::1","timestamp":"2026-07-07 05:47:44"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 491ms - IP: ::1","timestamp":"2026-07-07 05:47:55"}
+{"level":"info","message":"POST /api/candidates/export 202 - 138ms - IP: ::1","timestamp":"2026-07-07 05:48:03"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 130ms - IP: ::1","timestamp":"2026-07-07 05:48:03"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 9ms - IP: ::1","timestamp":"2026-07-07 05:48:03"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 118ms - IP: ::1","timestamp":"2026-07-07 05:48:06"}
+{"level":"info","message":"✓ Export Job 6a4cf5833ad30391682d775a completed successfully. 2041 records exported.","timestamp":"2026-07-07 05:48:07"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 150ms - IP: ::1","timestamp":"2026-07-07 05:48:10"}
+{"level":"warn","message":"401 - No token, authorization denied - /api/candidates/exports/download/export_6a4cf5833ad30391682d775a_1783428483974.xlsx - GET - ::1","timestamp":"2026-07-07 05:48:12"}
+{"level":"info","message":"GET /api/candidates/exports/download/export_6a4cf5833ad30391682d775a_1783428483974.xlsx 401 - 5ms - IP: ::1","timestamp":"2026-07-07 05:48:12"}
+{"level":"warn","message":"404 - Route /favicon.ico not found - /favicon.ico - GET - ::1","timestamp":"2026-07-07 05:48:13"}
+{"level":"info","message":"GET /favicon.ico 404 - 2ms - IP: ::1","timestamp":"2026-07-07 05:48:13"}
+{"level":"info","message":"GET /api/candidates/exports/download/export_6a4cf5833ad30391682d775a_1783428483974.xlsx?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4iLCJwZXJtaXNzaW9ucyI6WyJleHBvcnQiXSwiaWF0IjoxNzgyMTk5OTI1LCJleHAiOjE3ODQ3OTE5MjV9.Q4ntH9BPSOYSTWRMJW9qnpNHhFvZAOrAOmV6e7GXf8Y 200 - 13ms - IP: ::1","timestamp":"2026-07-07 05:48:22"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 506ms - IP: ::1","timestamp":"2026-07-07 05:48:58"}
+{"level":"info","message":"POST /api/candidates/export 202 - 124ms - IP: ::1","timestamp":"2026-07-07 05:49:00"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 7ms - IP: ::1","timestamp":"2026-07-07 05:49:00"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 123ms - IP: ::1","timestamp":"2026-07-07 05:49:00"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 117ms - IP: ::1","timestamp":"2026-07-07 05:49:03"}
+{"level":"info","message":"✓ Export Job 6a4cf5bc3ad30391682d775b completed successfully. 2041 records exported.","timestamp":"2026-07-07 05:49:05"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 126ms - IP: ::1","timestamp":"2026-07-07 05:49:06"}
+{"level":"info","message":"GET /api/candidates/exports/download/export_6a4cf5bc3ad30391682d775b_1783428540838.xlsx?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4iLCJwZXJtaXNzaW9ucyI6WyJleHBvcnQiXSwiaWF0IjoxNzgyMTk5OTI1LCJleHAiOjE3ODQ3OTE5MjV9.Q4ntH9BPSOYSTWRMJW9qnpNHhFvZAOrAOmV6e7GXf8Y 200 - 6ms - IP: ::1","timestamp":"2026-07-07 05:49:10"}
+{"level":"info","message":"POST /api/dashboard/clear-cache 200 - 2ms - IP: ::1","timestamp":"2026-07-07 05:53:01"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 246ms - IP: ::1","timestamp":"2026-07-07 05:53:01"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 513ms - IP: ::1","timestamp":"2026-07-07 05:53:01"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 789ms - IP: ::1","timestamp":"2026-07-07 05:53:01"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 476ms - IP: ::1","timestamp":"2026-07-07 05:53:05"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 536ms - IP: ::1","timestamp":"2026-07-07 05:56:45"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 06:12:38"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-07-07 06:12:39"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 06:12:39"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 06:12:39"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 22:17:57"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 22:17:58"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-07-07 22:17:58"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 22:17:58"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 22:34:26"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 22:34:27"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 22:34:28"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 22:34:28"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 305ms - IP: ::1","timestamp":"2026-07-07 22:34:32"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 532ms - IP: ::1","timestamp":"2026-07-07 22:34:32"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 761ms - IP: ::1","timestamp":"2026-07-07 22:34:32"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 490ms - IP: ::1","timestamp":"2026-07-07 22:35:06"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 10ms - IP: ::1","timestamp":"2026-07-07 22:35:11"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 130ms - IP: ::1","timestamp":"2026-07-07 22:35:11"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=custom&groupBy=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 139ms - IP: ::1","timestamp":"2026-07-07 22:35:11"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=district&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 244ms - IP: ::1","timestamp":"2026-07-07 22:35:11"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1308ms - IP: ::1","timestamp":"2026-07-07 22:39:47"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 8ms - IP: ::1","timestamp":"2026-07-07 22:40:14"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 127ms - IP: ::1","timestamp":"2026-07-07 22:40:14"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=custom&groupBy=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 124ms - IP: ::1","timestamp":"2026-07-07 22:40:14"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=district&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 251ms - IP: ::1","timestamp":"2026-07-07 22:40:14"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 506ms - IP: ::1","timestamp":"2026-07-07 22:40:43"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-07-07 22:40:59"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 121ms - IP: ::1","timestamp":"2026-07-07 22:40:59"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1125ms - IP: ::1","timestamp":"2026-07-07 22:41:00"}
+{"level":"info","message":"GET /api/candidates/admit-card/35404-1544196-1 200 - 1420ms - IP: ::1","timestamp":"2026-07-07 22:41:06"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 22:56:43"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 22:56:45"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 22:56:46"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 22:56:46"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 487ms - IP: ::1","timestamp":"2026-07-07 22:57:08"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 680ms - IP: ::1","timestamp":"2026-07-07 22:57:08"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 860ms - IP: ::1","timestamp":"2026-07-07 22:57:09"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 701ms - IP: ::1","timestamp":"2026-07-07 22:57:16"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 10ms - IP: ::1","timestamp":"2026-07-07 22:57:30"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 171ms - IP: ::1","timestamp":"2026-07-07 22:57:31"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=custom&groupBy=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 173ms - IP: ::1","timestamp":"2026-07-07 22:57:31"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=district&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 354ms - IP: ::1","timestamp":"2026-07-07 22:57:31"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 655ms - IP: ::1","timestamp":"2026-07-07 22:59:55"}
+{"level":"info","message":"GET /api/candidates/admit-card/35303-4067393-9 200 - 2310ms - IP: ::1","timestamp":"2026-07-07 23:00:18"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 351ms - IP: ::1","timestamp":"2026-07-07 23:08:20"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 787ms - IP: ::1","timestamp":"2026-07-07 23:08:21"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1119ms - IP: ::1","timestamp":"2026-07-07 23:08:21"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 658ms - IP: ::1","timestamp":"2026-07-07 23:08:25"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=custom&groupBy=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 167ms - IP: ::1","timestamp":"2026-07-07 23:10:12"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 188ms - IP: ::1","timestamp":"2026-07-07 23:10:12"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=district&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 325ms - IP: ::1","timestamp":"2026-07-07 23:10:12"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 661ms - IP: ::1","timestamp":"2026-07-07 23:10:12"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 672ms - IP: ::1","timestamp":"2026-07-07 23:12:29"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-07-07 23:12:50"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 159ms - IP: ::1","timestamp":"2026-07-07 23:12:50"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 652ms - IP: ::1","timestamp":"2026-07-07 23:12:50"}
+{"level":"info","message":"GET /api/candidates/admit-card/35202-9839366-0 200 - 1575ms - IP: ::1","timestamp":"2026-07-07 23:12:55"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 435ms - IP: ::1","timestamp":"2026-07-07 23:17:08"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1103ms - IP: ::1","timestamp":"2026-07-07 23:17:09"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1556ms - IP: ::1","timestamp":"2026-07-07 23:17:10"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 655ms - IP: ::1","timestamp":"2026-07-07 23:17:16"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 5ms - IP: ::1","timestamp":"2026-07-07 23:17:17"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 161ms - IP: ::1","timestamp":"2026-07-07 23:17:17"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=custom&groupBy=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 164ms - IP: ::1","timestamp":"2026-07-07 23:17:17"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=district&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 314ms - IP: ::1","timestamp":"2026-07-07 23:17:17"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 666ms - IP: ::1","timestamp":"2026-07-07 23:19:13"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 200ms - IP: ::1","timestamp":"2026-07-07 23:19:32"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 656ms - IP: ::1","timestamp":"2026-07-07 23:19:33"}
+{"level":"info","message":"GET /api/candidates/admit-card/35302-0374472-4 200 - 1162ms - IP: ::1","timestamp":"2026-07-07 23:19:36"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 169ms - IP: ::1","timestamp":"2026-07-07 23:26:36"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 227ms - IP: ::1","timestamp":"2026-07-07 23:26:36"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 719ms - IP: ::1","timestamp":"2026-07-07 23:26:36"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2311ms - IP: ::1","timestamp":"2026-07-07 23:27:08"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 5ms - IP: ::1","timestamp":"2026-07-07 23:27:17"}
+{"level":"info","message":"GET /api/candidates/attendance 200 - 178ms - IP: ::1","timestamp":"2026-07-07 23:27:17"}
+{"level":"info","message":"GET /api/candidates/attendance 200 - 162ms - IP: ::1","timestamp":"2026-07-07 23:27:17"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 5ms - IP: ::1","timestamp":"2026-07-07 23:27:18"}
+{"level":"info","message":"GET /api/results?page=1&limit=50&search= 200 - 357ms - IP: ::1","timestamp":"2026-07-07 23:27:18"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 5ms - IP: ::1","timestamp":"2026-07-07 23:27:19"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 163ms - IP: ::1","timestamp":"2026-07-07 23:27:19"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=custom&groupBy=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 166ms - IP: ::1","timestamp":"2026-07-07 23:27:19"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=district&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 322ms - IP: ::1","timestamp":"2026-07-07 23:27:19"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 653ms - IP: ::1","timestamp":"2026-07-07 23:29:25"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=PENETRATION+TESTING+WEB+HACKING&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 356ms - IP: ::1","timestamp":"2026-07-07 23:31:14"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 177ms - IP: ::1","timestamp":"2026-07-07 23:31:26"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 198ms - IP: ::1","timestamp":"2026-07-07 23:31:26"}
+{"level":"info","message":"GET /api/candidates/admit-card/35101-9930391-1 200 - 1099ms - IP: ::1","timestamp":"2026-07-07 23:31:31"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 994ms - IP: ::1","timestamp":"2026-07-07 23:34:32"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 1250ms - IP: ::1","timestamp":"2026-07-07 23:34:33"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2307ms - IP: ::1","timestamp":"2026-07-07 23:34:34"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 887ms - IP: ::1","timestamp":"2026-07-07 23:34:46"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 4ms - IP: ::1","timestamp":"2026-07-07 23:34:48"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=custom&groupBy=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 779ms - IP: ::1","timestamp":"2026-07-07 23:34:48"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 1346ms - IP: ::1","timestamp":"2026-07-07 23:34:49"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=district&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 1358ms - IP: ::1","timestamp":"2026-07-07 23:34:49"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 642ms - IP: ::1","timestamp":"2026-07-07 23:35:27"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=SEARCH+ENGINE+OPTIMIZATION+-+SEO&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 2078ms - IP: ::1","timestamp":"2026-07-07 23:35:34"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-07-07 23:35:46"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 157ms - IP: ::1","timestamp":"2026-07-07 23:35:46"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 645ms - IP: ::1","timestamp":"2026-07-07 23:35:46"}
+{"level":"info","message":"GET /api/candidates/admit-card/31102-0249630-8 200 - 386ms - IP: ::1","timestamp":"2026-07-07 23:35:50"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 181ms - IP: ::1","timestamp":"2026-07-07 23:36:49"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 593ms - IP: ::1","timestamp":"2026-07-07 23:36:49"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 696ms - IP: ::1","timestamp":"2026-07-07 23:36:49"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 770ms - IP: ::1","timestamp":"2026-07-07 23:36:54"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 5ms - IP: ::1","timestamp":"2026-07-07 23:37:17"}
+{"level":"info","message":"GET /api/results?page=1&limit=50&search= 200 - 310ms - IP: ::1","timestamp":"2026-07-07 23:37:18"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 5ms - IP: ::1","timestamp":"2026-07-07 23:37:18"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 164ms - IP: ::1","timestamp":"2026-07-07 23:37:19"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=custom&groupBy=course&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 161ms - IP: ::1","timestamp":"2026-07-07 23:37:19"}
+{"level":"info","message":"GET /api/candidates/reports?reportType=district&gender=All&city=All&preferredExamCity=Lahore+%28nearest+areas%29&district=All&course=All&startDate=&endDate= 200 - 315ms - IP: ::1","timestamp":"2026-07-07 23:37:19"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 660ms - IP: ::1","timestamp":"2026-07-07 23:38:15"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=WORDPRESS+WEBSITE+DEVELOPMENT&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 485ms - IP: ::1","timestamp":"2026-07-07 23:38:42"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-07-07 23:38:54"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 177ms - IP: ::1","timestamp":"2026-07-07 23:38:54"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 698ms - IP: ::1","timestamp":"2026-07-07 23:38:55"}
+{"level":"info","message":"GET /api/candidates/admit-card/35302-3397682-5 200 - 363ms - IP: ::1","timestamp":"2026-07-07 23:39:01"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 23:52:50"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-01.7dbsn.mongodb.net","timestamp":"2026-07-07 23:52:51"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 23:52:51"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 23:52:51"}
+{"level":"warn","message":"⚠️ Redis Connection Failed: connect ECONNREFUSED 127.0.0.1:6379. Using In-Memory fallback cache.","timestamp":"2026-07-07 23:55:29"}
+{"level":"info","message":"✓ Master Database Connected (hunarmand-prd)","timestamp":"2026-07-07 23:55:30"}
+{"level":"info","message":"✓ Primary MongoDB Connected: hunarmand-punjab-shard-00-02.7dbsn.mongodb.net","timestamp":"2026-07-07 23:55:30"}
+{"level":"info","message":"✓ Server running on port 5001 in [production] mode","timestamp":"2026-07-07 23:55:30"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 439ms - IP: ::1","timestamp":"2026-07-07 23:55:43"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 720ms - IP: ::1","timestamp":"2026-07-07 23:55:43"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 898ms - IP: ::1","timestamp":"2026-07-07 23:55:43"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 727ms - IP: ::1","timestamp":"2026-07-07 23:55:51"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=REACT+%26+NODE.JS+FULL+STACK+DEVELOPMENT&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 344ms - IP: ::1","timestamp":"2026-07-07 23:55:54"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 4ms - IP: ::1","timestamp":"2026-07-07 23:56:04"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-07-07 23:56:04"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 156ms - IP: ::1","timestamp":"2026-07-07 23:56:04"}
+{"level":"info","message":"GET /api/candidates/admit-card/32304-5968051-9 400 - 168ms - IP: ::1","timestamp":"2026-07-07 23:56:08"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-07-07 23:56:17"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 156ms - IP: ::1","timestamp":"2026-07-07 23:56:17"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 876ms - IP: ::1","timestamp":"2026-07-07 23:56:18"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=Lahore+%28nearest+areas%29&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 647ms - IP: ::1","timestamp":"2026-07-07 23:56:24"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 2ms - IP: ::1","timestamp":"2026-07-07 23:56:52"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 161ms - IP: ::1","timestamp":"2026-07-07 23:56:52"}
+{"level":"info","message":"GET /api/candidates/admit-card/35404-1544196-1 200 - 387ms - IP: ::1","timestamp":"2026-07-07 23:56:56"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 325ms - IP: ::1","timestamp":"2026-07-07 23:57:25"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 701ms - IP: ::1","timestamp":"2026-07-07 23:57:25"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1096ms - IP: ::1","timestamp":"2026-07-07 23:57:25"}
+{"level":"info","message":"GET /api/candidates?page=2&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 716ms - IP: ::1","timestamp":"2026-07-07 23:57:41"}
+{"level":"info","message":"GET /api/dashboard/stats 200 - 1ms - IP: ::1","timestamp":"2026-07-07 23:57:58"}
+{"level":"info","message":"GET /api/candidates/export/jobs 200 - 160ms - IP: ::1","timestamp":"2026-07-07 23:57:58"}
+{"level":"info","message":"GET /api/candidates?page=1&limit=50&search=&gender=All&city=All&email=&phone=&preferredExamCity=All&district=All&tehsil=All&institute=All&batch=All&verification=All&course=All&startDate=&endDate=&sortBy=createdAt&sortOrder=desc&showDeleted=false&slipGenerated=false 200 - 760ms - IP: ::1","timestamp":"2026-07-07 23:57:58"}
+{"level":"info","message":"GET /api/candidates/admit-card/35302-6274617-5 200 - 1192ms - IP: ::1","timestamp":"2026-07-07 23:58:03"}

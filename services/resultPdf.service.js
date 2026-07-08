@@ -70,7 +70,7 @@ class ResultPdfService {
         };
 
         drawInfo('Candidate Name', result.studentName, col1, detailsY);
-        drawInfo('Roll Number', result.rollNumber, col2, detailsY);
+        drawInfo('Exam ID / Roll No', result.rollNumber, col2, detailsY);
         drawInfo('CNIC', result.CNIC, col1, detailsY + 45);
         drawInfo('Course', result.course, col2, detailsY + 45);
         drawInfo('District', result.district, col1, detailsY + 90);

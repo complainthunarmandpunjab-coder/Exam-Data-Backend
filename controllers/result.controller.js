@@ -9,7 +9,7 @@ const ApiError = require('../utils/apiError');
 // Helper to calculate Grade and Status
 const calculateResult = (theoryMarks, practicalMarks) => {
   const obtainedMarks = Number(theoryMarks) + Number(practicalMarks);
-  const totalMarks = 100; // Fixed per your grading rules, or adjust if needed.
+  const totalMarks = 60; // Changed to 60 as per user request
   const percentage = (obtainedMarks / totalMarks) * 100;
   
   let grade = 'FAIL';

@@ -13,6 +13,11 @@ router.get(
 );
 
 router.post(
+  '/candidates/admit-card',
+  candidateController.postAdmitCardPdf
+);
+
+router.post(
   '/register',
   validate(candidateValidation.registerSchema),
   candidateController.register

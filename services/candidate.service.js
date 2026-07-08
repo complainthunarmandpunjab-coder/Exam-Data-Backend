@@ -123,10 +123,14 @@ class CandidateService {
     const tehsil = masterUser.tehsil || '';
     const institute = masterUser.institute || masterUser.campus || '';
 
-    // Handle base64 profile image — store directly in DB (already compressed to ~3KB by frontend)
+    // Handle profile image — store base64 directly or keep URL/path
     let imagePath = '';
-    if (candidateData.profileImage && candidateData.profileImage.startsWith('data:image')) {
-      imagePath = candidateData.profileImage; // store base64 directly
+    if (candidateData.profileImage) {
+      if (candidateData.profileImage.startsWith('data:image') || candidateData.profileImage.startsWith('http') || candidateData.profileImage.startsWith('/')) {
+        imagePath = candidateData.profileImage;
+      } else {
+        imagePath = candidateData.profileImage; // default keep it
+      }
     }
 
     const crypto = require('crypto');
@@ -175,10 +179,7 @@ class CandidateService {
       throw new ApiError(400, 'Student already registered.');
     }
 
-    let imagePath = '';
-    if (candidateData.profileImage && candidateData.profileImage.startsWith('data:image')) {
-      imagePath = candidateData.profileImage;
-    }
+    let imagePath = candidateData.profileImage || '';
 
     const crypto = require('crypto');
     const qrSecureToken = crypto.randomBytes(16).toString('hex');
@@ -346,6 +347,12 @@ class CandidateService {
     }
     if (filters.city && filters.city !== 'All') {
       query.city = { $regex: `^${escapeRegex(filters.city)}$`, $options: 'i' };
+    }
+    if (filters.email && filters.email.trim() !== '') {
+      query.email = { $regex: escapeRegex(filters.email.trim()), $options: 'i' };
+    }
+    if (filters.phone && filters.phone.trim() !== '') {
+      query.contactNumber = { $regex: escapeRegex(filters.phone.trim()), $options: 'i' };
     }
     if (filters.preferredExamCity && filters.preferredExamCity !== 'All') {
       query.preferredExamCity = { $regex: `^${escapeRegex(filters.preferredExamCity)}$`, $options: 'i' };

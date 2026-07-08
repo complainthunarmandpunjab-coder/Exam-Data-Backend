@@ -25,7 +25,7 @@ const rateLimit = require('express-rate-limit');
 const config = require('./config/environment');
 const { connectDB } = require('./config/db');
 const logger = require('./config/logger');
-const routes = require('./routes');
+const routes = require('./Routes');
 const errorHandler = require('./middleware/error.middleware');
 const requestLogger = require('./middleware/requestLogger.middleware');
 const ApiResponse = require('./utils/apiResponse');
@@ -42,6 +42,8 @@ app.use(helmet());
 // Enable CORS
 const allowedOrigins = [
   'https://exams.hunarmandpunjab.org.pk',
+  'http://test.hunarmandpunjab.org.pk',
+  'https://test.hunarmandpunjab.org.pk',
   'http://exams.hunarmandpunjab.org.pk',
   'https://www.exams.hunarmandpunjab.org.pk',
   'http://www.exams.hunarmandpunjab.org.pk',
@@ -97,6 +99,12 @@ app.use('/api/register', submissionLimiter);
 app.use('/api/verify-student', submissionLimiter);
 app.use('/api/candidates/admit-card', submissionLimiter);
 app.use('/api/results/public', submissionLimiter);
+
+// Append charset utf-8 explicitly for custom responses (Fix for Urdu response breaks)
+app.use((req, res, next) => {
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+  next();
+});
 
 // API Routes
 app.use('/api/v1', routes);
