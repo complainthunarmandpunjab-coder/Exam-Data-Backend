@@ -20,7 +20,7 @@ const transports = [
 
 if (config.env === 'production') {
   const logDirectory = path.join(__dirname, '../logs');
-  
+
   transports.push(
     new winston.transports.DailyRotateFile({
       filename: path.join(logDirectory, 'error-%DATE%.log'),

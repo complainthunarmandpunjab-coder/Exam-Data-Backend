@@ -22,20 +22,27 @@ class CandidateController {
 
   getAdmitCard = async (req, res, next) => {
     try {
-      const cnic = req.params.cnic || req.body.cnic;
-      const profileImage = req.body.profileImage;
-      
+      const cnic = req.params?.cnic || req.body?.cnic;
+      const profileImage = req.body?.profileImage;
+
+      // Student ka bheja hua mukammal data live dekhne ke liye
+      console.log("⚠️ WRONG REQUEST DETECTED ->", {
+        url_cnic: req?.params?.cnic,
+        form_data: req?.body, // Is mein student ka type kiya hua sab kuch hoga
+        browser: req?.headers['user-agent']
+      });
+
       if (!cnic) {
         return res.status(400).json({ success: false, message: 'CNIC is required.' });
       }
 
       const cleanCnic = cnic.replace(/[^0-9]/g, '');
-      const candidate = await candidateService.getCandidateByCnic(cleanCnic);
-      
+      const candidate = await candidateService.getCandidateByCnic(cnic);
+
       if (!candidate) {
-        return res.status(404).json({ 
-          success: false, 
-          message: 'No registration found for this CNIC. / اس شناختی کارڈ پر کوئی رجسٹریشن نہیں ملی۔' 
+        return res.status(404).json({
+          success: false,
+          message: 'No registration found for this CNIC. / اس شناختی کارڈ پر کوئی رجسٹریشن نہیں ملی۔'
         });
       }
 
@@ -50,9 +57,9 @@ class CandidateController {
 
       // Only require image if candidate has no image
       if (!candidate.profileImage && (!profileImage || !profileImage.startsWith('data:image'))) {
-        return res.status(400).json({ 
-          success: false, 
-          message: 'Profile image is required for your first slip generation. Please upload an image. / پہلی بار سلپ ڈاؤن لوڈ کرنے کے لیے تصویر اپلوڈ کرنا لازمی ہے۔' 
+        return res.status(400).json({
+          success: false,
+          message: 'Profile image is required for your first slip generation. Please upload an image. / پہلی بار سلپ ڈاؤن لوڈ کرنے کے لیے تصویر اپلوڈ کرنا لازمی ہے۔'
         });
       }
 
@@ -64,7 +71,7 @@ class CandidateController {
           { _id: candidate._id },
           { profileImage: profileImage }
         );
-        
+
         // Remove old cached PDF to force regeneration with new image
         const path = require('path');
         const fs = require('fs');
@@ -80,7 +87,7 @@ class CandidateController {
       const path = require('path');
       const fs = require('fs');
       const cacheDir = path.join(__dirname, '../exports_secure/slips');
-      
+
       try {
         if (!fs.existsSync(cacheDir)) {
           fs.mkdirSync(cacheDir, { recursive: true });
@@ -110,7 +117,7 @@ class CandidateController {
         const pdfService = require('../services/pdf.service');
         const frontendUrl = req.get('origin') || process.env.FRONTEND_URL || 'https://test.hunarmandpunjab.org.pk';
         const pdfBuffer = await pdfService.generateAdmitCard(updatedCandidate || candidate, frontendUrl);
-        
+
         // Save to disk cache asynchronously so we don't block the response
         fs.writeFile(cachedPdfPath, pdfBuffer, (err) => {
           if (err) console.error('Failed to cache PDF to disk', err);
@@ -118,7 +125,7 @@ class CandidateController {
 
         res.send(pdfBuffer);
       }
-      
+
       // Mark as generated
       try {
         await candidateService.markSlipGenerated(candidate._id);
@@ -133,19 +140,19 @@ class CandidateController {
 
   getCandidates = async (req, res, next) => {
     try {
-      const { 
-        page, limit, search, gender, city, preferredExamCity, district, tehsil, institute, 
+      const {
+        page, limit, search, gender, city, preferredExamCity, district, tehsil, institute,
         batch, verification, course, status, startDate, endDate, sortBy, sortOrder, showDeleted, slipGenerated
       } = req.query;
-      
-      const filters = { 
-        search, gender, city, preferredExamCity, district, tehsil, institute, 
+
+      const filters = {
+        search, gender, city, preferredExamCity, district, tehsil, institute,
         batch, verification, course, status, startDate, endDate, sortBy, sortOrder, showDeleted, slipGenerated
       };
       const paginationOptions = { page, limit };
 
       const result = await candidateService.getCandidates(filters, paginationOptions);
-      
+
       new ApiResponse(200, true, 'Candidates fetched successfully', result.data, {
         total: result.total,
         page: result.page,
@@ -160,6 +167,9 @@ class CandidateController {
   softDelete = async (req, res, next) => {
     try {
       const candidate = await candidateService.softDeleteCandidate(req.params.id);
+      if (!candidate) {
+        return res.status(404).json({ success: false, message: "Candidate not found" });
+      }
       new ApiResponse(200, true, 'Candidate record soft deleted successfully', candidate).send(res);
     } catch (error) {
       next(error);
@@ -169,6 +179,9 @@ class CandidateController {
   restore = async (req, res, next) => {
     try {
       const candidate = await candidateService.restoreCandidate(req.params.id);
+      if (!candidate) {
+        return res.status(404).json({ success: false, message: "Candidate not found" });
+      }
       new ApiResponse(200, true, 'Candidate record restored successfully', candidate).send(res);
     } catch (error) {
       next(error);
@@ -178,6 +191,9 @@ class CandidateController {
   update = async (req, res, next) => {
     try {
       const candidate = await candidateService.updateCandidate(req.params.id, req.body);
+      if (!candidate) {
+        return res.status(404).json({ success: false, message: "Candidate not found" });
+      }
       new ApiResponse(200, true, 'Candidate record updated successfully', candidate).send(res);
     } catch (error) {
       next(error);
@@ -235,7 +251,7 @@ class CandidateController {
           const environment = require('../config/environment');
           jwt.verify(tokenHeader, environment.jwtSecret);
           isAdmin = true;
-        } catch(err) {
+        } catch (err) {
           // Ignore token error for public view
         }
       }
@@ -276,7 +292,7 @@ class CandidateController {
       const path = require('path');
       const fs = require('fs');
       const filePath = path.join(__dirname, '../exports_secure', filename);
-      
+
       if (fs.existsSync(filePath)) {
         res.download(filePath);
       } else {

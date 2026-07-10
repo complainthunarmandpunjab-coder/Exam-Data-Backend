@@ -427,13 +427,21 @@ class PdfService {
 
         // Column 3 (Photo Box on Right)
         doc.roundedRect(465, 160, 110, 135, 8).strokeColor(primaryColor).lineWidth(2).stroke();
+        let imageRendered = false;
         if (hasPhoto) {
-          doc.save();
-          // Clip image to rounded rect
-          doc.roundedRect(467, 162, 106, 131, 6).clip();
-          doc.image(photoBuffer, 467, 162, { width: 106, height: 131 });
-          doc.restore();
-        } else {
+          try {
+            doc.save();
+            doc.roundedRect(467, 162, 106, 131, 6).clip();
+            doc.image(photoBuffer, 467, 162, { width: 106, height: 131 });
+            doc.restore();
+            imageRendered = true;
+          } catch (imgErr) {
+            console.error('Failed to render photo in PDF:', imgErr.message);
+            doc.restore(); // Ensure we restore context if it crashed
+          }
+        }
+        
+        if (!imageRendered) {
           doc.fillColor(lightText)
             .font('Helvetica')
             .fontSize(8.5)
@@ -611,12 +619,21 @@ class PdfService {
         // Small Photo with blue border
         const smallPhotoX = 360;
         doc.roundedRect(smallPhotoX, detailsY, 95, 115, 6).strokeColor('#3B82F6').lineWidth(2).stroke();
+        let smallImageRendered = false;
         if (hasPhoto) {
-          doc.save();
-          doc.roundedRect(smallPhotoX + 1, detailsY + 1, 93, 113, 5).clip();
-          doc.image(photoBuffer, smallPhotoX + 1, detailsY + 1, { width: 93, height: 113 });
-          doc.restore();
-        } else {
+          try {
+            doc.save();
+            doc.roundedRect(smallPhotoX + 1, detailsY + 1, 93, 113, 5).clip();
+            doc.image(photoBuffer, smallPhotoX + 1, detailsY + 1, { width: 93, height: 113 });
+            doc.restore();
+            smallImageRendered = true;
+          } catch (imgErr) {
+            console.error('Failed to render small photo in PDF:', imgErr.message);
+            doc.restore();
+          }
+        }
+        
+        if (!smallImageRendered) {
           doc.fillColor(lightText).font('Helvetica').fontSize(6).text('PHOTO', smallPhotoX, detailsY + 50, { width: 95, align: 'center' });
         }
 

@@ -49,19 +49,19 @@ masterConn.on('error', (err) => {
 
 // Master database models mapped to their respective collections
 const MasterUser = masterConn.model('User', new mongoose.Schema({
-    rollNumber: { type: String },
-    email: { type: String },
-    fullName: { type: String },
-    fatherName: { type: String },
-    cnic: { type: String },
-    createdAt: { type: Date }
+  rollNumber: { type: String },
+  email: { type: String },
+  fullName: { type: String },
+  fatherName: { type: String },
+  cnic: { type: String },
+  createdAt: { type: Date }
 }, { strict: false, collection: 'users' }));
 
 const MasterChallan = masterConn.model('Challan', new mongoose.Schema({
-    userId: { type: String },
-    rollNumber: { type: String },
-    paid: { type: Boolean },
-    createdAt: { type: Date }
+  userId: { type: String },
+  rollNumber: { type: String },
+  paid: { type: Boolean },
+  createdAt: { type: Date }
 }, { strict: false, collection: 'challans' }));
 
 module.exports = {

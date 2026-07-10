@@ -34,16 +34,22 @@ class CandidateService {
     const trimmedCnic = cnic.trim();
     const trimmedRoll = rollNumber.trim();
 
+    // Flexible CNIC match (with or without dashes)
+    const inputCnicClean = String(trimmedCnic).replace(/[^0-9]/g, '');
+    const pattern = inputCnicClean.split('').join('-?');
+    const regex = new RegExp(`^${pattern}$`);
+
     // Check local Exam DB to prevent duplicate registration
     const existingLocal = await candidateRepository.findOne({
       $or: [
-        { cnic: trimmedCnic },
+        { cnic: { $regex: regex } },
         { rollNumber: trimmedRoll }
       ]
     });
 
     if (existingLocal) {
-      if (existingLocal.cnic === trimmedCnic) {
+      const existingCnicClean = String(existingLocal.cnic).replace(/[^0-9]/g, '');
+      if (existingCnicClean === inputCnicClean) {
         throw new ApiError(400, 'You have already submitted your form successfully. (آپ پہلے ہی کامیابی کے ساتھ فارم جمع کروا چکے ہیں، آپ دوبارہ اپلائی نہیں کر سکتے)');
       }
       if (existingLocal.rollNumber === trimmedRoll) {
@@ -51,11 +57,6 @@ class CandidateService {
       }
       throw new ApiError(400, 'You have already submitted your form successfully.');
     }
-
-    // Flexible CNIC match (with or without dashes)
-    const inputCnicClean = String(trimmedCnic).replace(/[^0-9]/g, '');
-    const pattern = inputCnicClean.split('').join('-?');
-    const regex = new RegExp(`^${pattern}$`);
 
     const masterUser = await MasterUser.findOne({ cnic: { $regex: regex } });
 
@@ -66,14 +67,14 @@ class CandidateService {
     // Validate fields match strictly (ignoring dashes)
     const dbCnicClean = String(masterUser.cnic).replace(/[^0-9]/g, '');
 
-    
+
     if (dbCnicClean !== inputCnicClean) {
       throw new ApiError(400, 'Registration failed: The CNIC you entered is wrong. (آپ نے غلط شناختی کارڈ نمبر درج کیا ہے، برائے مہربانی درست شناختی کارڈ لکھیں)');
     }
 
     // Verify the selected course exists in the student's Master database courses array
     const selectedCourse = candidateData.course.toLowerCase().trim();
-    
+
     // Support both 'courses' (Array) and 'course' (String) fields from Master DB
     let studentCourses = [];
     if (masterUser.courses && Array.isArray(masterUser.courses)) {
@@ -141,6 +142,7 @@ class CandidateService {
 
     const savedCandidate = await candidateRepository.create({
       ...candidateData,
+      cnic: inputCnicClean,
       profileImage: imagePath,
       district,
       tehsil,
@@ -161,16 +163,22 @@ class CandidateService {
     const trimmedCnic = cnic.trim();
     const trimmedRoll = rollNumber.trim();
 
+    // Flexible CNIC match
+    const inputCnicClean = String(trimmedCnic).replace(/[^0-9]/g, '');
+    const pattern = inputCnicClean.split('').join('-?');
+    const regex = new RegExp(`^${pattern}$`);
+
     // Check local Exam DB to prevent duplicate registration
     const existingLocal = await candidateRepository.findOne({
       $or: [
-        { cnic: trimmedCnic },
+        { cnic: { $regex: regex } },
         { rollNumber: trimmedRoll }
       ]
     });
 
     if (existingLocal) {
-      if (existingLocal.cnic === trimmedCnic) {
+      const existingCnicClean = String(existingLocal.cnic).replace(/[^0-9]/g, '');
+      if (existingCnicClean === inputCnicClean) {
         throw new ApiError(400, 'This CNIC is already registered in the system.');
       }
       if (existingLocal.rollNumber === trimmedRoll) {
@@ -190,6 +198,7 @@ class CandidateService {
     // Save directly without Master DB checks
     const savedCandidate = await candidateRepository.create({
       ...candidateData,
+      cnic: inputCnicClean,
       profileImage: imagePath,
       qrSecureToken,
       examSeqNumber,
@@ -205,15 +214,29 @@ class CandidateService {
   }
 
   async getCandidateByCnic(cnic) {
-    const cleanCnic = cnic.replace(/[^0-9]/g, '');
-    const pattern = cleanCnic.split('').join('-?');
-    const regex = new RegExp(`^${pattern}$`);
-    return await candidateRepository.findOne({ cnic: { $regex: regex }, isDeleted: { $ne: true } });
+    // Yeh line student ka bheja hua data terminal par print karegi
+    console.log("=== SLIP REQUEST ===", { cnic: cnic });
+
+    // CNIC ko string aur number dono shaklon mein convert karein
+    const cnicString = String(cnic).trim();
+    const cleanCnic = cnicString.replace(/[^0-9]/g, ''); // Saare dashes mita kar sirf number
+    const cnicNumber = Number(cleanCnic);
+
+    // Ab database mein sirf clean cnic se dhoondein (script already sari dashes remove kar de gi)
+    return await candidateRepository.findOne({
+      $or: [
+        { cnic: cleanCnic },
+        { cnic: cnicNumber },
+        { cnic: cnicString }, // Fallback in case migration script hasn't run on everything
+        { cnic: { $regex: cleanCnic, $options: 'i' } }
+      ],
+      isDeleted: { $ne: true }
+    });
   }
 
   // QR scan: find by token, mark attended if admin, return safe student data
   async verifyByQrToken(token, isAdmin = false) {
-    const candidate = await candidateRepository.findOne({ 
+    const candidate = await candidateRepository.findOne({
       qrSecureToken: token,
       isDeleted: { $ne: true }
     });
@@ -238,7 +261,7 @@ class CandidateService {
       if (words.length === 1) return words[0].substring(0, 3).toUpperCase();
       return words.map(w => w[0].toUpperCase()).join('').substring(0, 4);
     };
-    
+
     const courseInitials = getCourseInitials(candidate.course);
     const seqNum = String(candidate.examSeqNumber || 1).padStart(5, '0');
     const examId = `HP-EXAM-${courseInitials}-${seqNum}`;
@@ -276,22 +299,22 @@ class CandidateService {
     }
 
     const Counter = require('../models/counter.model');
-    
+
     // Atomically increment the sequence number for this specific course
     const counterId = `course_${course}`;
     const counterDoc = await Counter.findByIdAndUpdate(
       { _id: counterId },
       { $inc: { sequence_value: 1 } },
-      { new: true, upsert: true }
+      { returnDocument: 'after', upsert: true }
     );
-    
+
     const nextSeq = counterDoc.sequence_value;
 
     // Assign the sequence number (only if it's still 0)
     const updatedCandidate = await candidateRepository.findOneAndUpdate(
       { _id: id, examSeqNumber: { $in: [0, null] }, isDeleted: { $ne: true } },
       { $set: { examSeqNumber: nextSeq } },
-      { new: true }
+      { returnDocument: 'after' }
     );
 
     return updatedCandidate || candidate;
@@ -301,13 +324,13 @@ class CandidateService {
     const candidate = await candidateRepository.findOneAndUpdate(
       { _id: id, isDeleted: { $ne: true } },
       { $set: { slipGenerated: true, slipGeneratedAt: new Date() } },
-      { new: true }
+      { returnDocument: 'after' }
     );
     if (candidate) {
       console.log('Slip generated marked for', id);
-      // Clear cache
-      await redisService.invalidatePrefix('stats:');
-      await redisService.invalidatePrefix('candidates:');
+      // Removed automatic cache invalidation to prevent Redis KEYS command blocking under load
+      // await redisService.invalidatePrefix('stats:');
+      // await redisService.invalidatePrefix('candidates:');
     } else {
       console.log('Failed to find candidate to mark slip generated:', id);
     }
@@ -378,7 +401,7 @@ class CandidateService {
     if (filters.status && filters.status !== 'All') {
       query.status = { $regex: `^${escapeRegex(filters.status)}$`, $options: 'i' };
     }
-    
+
     if (filters.slipGenerated === 'true' || filters.slipGenerated === true) {
       query.slipGenerated = true;
     }
@@ -528,8 +551,7 @@ class CandidateService {
       pipeline = [
         { $match: match },
         { $group: { _id: '$course', count: { $sum: 1 } } },
-        { $sort: { count: -1 } },
-        { $limit: 10 }
+        { $sort: { count: -1 } }
       ];
     } else if (reportType === 'institute') {
       pipeline = [

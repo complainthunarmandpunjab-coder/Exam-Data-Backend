@@ -36,20 +36,8 @@ const app = express();
 // Express proxy trust configuration for rate limiter behind Nginx
 app.set('trust proxy', 1);
 
-// Dynamic Allowed Origins
-const allowedOrigins = [
-  'https://exams.hunarmandpunjab.org.pk',
-  'https://test.hunarmandpunjab.org.pk'
-];
-
 const corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) === -1) {
-      return callback(new Error('CORS policy block'), false);
-    }
-    return callback(null, true);
-  },
+  origin: true,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   // 🚨 'x-auth-token' ko yahan explicitly allow kar diya hai

@@ -3,7 +3,7 @@ const environment = require('../config/environment');
 
 const errorHandler = (err, req, res, next) => {
   let { statusCode = 500, message } = err;
-  
+
   if (environment.env === 'production' && !err.isOperational) {
     statusCode = 500;
     message = 'Internal Server Error';

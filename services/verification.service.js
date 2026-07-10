@@ -24,7 +24,7 @@ class VerificationService {
         { key: 'email', label: 'Email', value: email }
       ];
 
-      const mismatches = fieldsToMatch.filter(field => 
+      const mismatches = fieldsToMatch.filter(field =>
         String(masterUser[field.key]).toLowerCase().trim() !== String(field.value).toLowerCase().trim()
       );
 
@@ -44,8 +44,8 @@ class VerificationService {
       const hasCourse = studentCourses.length > 0 && studentCourses.some(c => {
         const dbCourse = String(c).toLowerCase().trim();
         return dbCourse.includes(selectedCourse) || selectedCourse.includes(dbCourse) ||
-               dbCourse.replace(/[^a-z0-9]/g, '').includes(selectedCourse.replace(/[^a-z0-9]/g, '')) ||
-               selectedCourse.replace(/[^a-z0-9]/g, '').includes(dbCourse.replace(/[^a-z0-9]/g, ''));
+          dbCourse.replace(/[^a-z0-9]/g, '').includes(selectedCourse.replace(/[^a-z0-9]/g, '')) ||
+          selectedCourse.replace(/[^a-z0-9]/g, '').includes(dbCourse.replace(/[^a-z0-9]/g, ''));
       });
 
       if (mismatches.length > 0) {
